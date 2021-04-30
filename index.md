@@ -4,7 +4,7 @@ title: Carmen Amo Alonso
 ---
 ## Welcome to my website!
 
-<p style='text-align: justify;'>  My name is Carmen Amo Alonso and I am a Ph.D. Candidate in Control and Dynamical Systems at the Department of Computing and Mathematical Sciences at Caltech, where I work under the advice of <a href="http://www.cds.caltech.edu/~doyle/wiki/index.php?title=Main_Page">Prof. John Doyle</a>.  I am also a <a href="https://cms.caltech.edu/academics/honors">2020-2021 Amazon/Caltech AI4Science Fellow</a>. </p>
+<p style='text-align: justify;'>  My name is Carmen Amo Alonso and I am a Ph.D. Candidate in Control and Dynamical Systems at the Department of Computing and Mathematical Sciences at Caltech, where I work under the advice of <a href="http://www.cds.caltech.edu/~doyle/wiki/index.php?title=Main_Page">Prof. John Doyle</a>.  I am also a <a href=" https://www.amazon.science/academic-engagements/caltech-names-eight-ai4science-fellows-supported-by-amazon">2020-2021 Amazon/Caltech AI4Science Fellow</a>. </p>
 
 <img align="right" src="photo.jpeg" img style="float: right; padding-left: 50px;padding-top: 5px">
 
