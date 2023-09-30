@@ -1,18 +1,36 @@
 ---
 layout: default
-title: Carmen Amo Alonso
+order: 0
 ---
-## Welcome to my website!
 
-<p style='text-align: justify;'>  My name is Carmen Amo Alonso and I am a Ph.D. Candidate in Control and Dynamical Systems at the Department of Computing and Mathematical Sciences at Caltech, where I work under the advice of <a href="http://www.cds.caltech.edu/~doyle/wiki/index.php?title=Main_Page">Prof. John Doyle</a>. During the spring 2022, I will be interning at Tesla. </p>
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+  <!-- <h3 style="font-size:18pt"> Welcome to my website! </h3> -->
+  <img id="myphoto" alt="Carmen Amo Alonso" src="{{ "/assets/imgs/me.jpg" | relative_url }}"/>
+    <div id="aboutme">
+  {% include_relative 1-about.md %}
+  </div>
+  
+<!---
+<div id="recent-news">
+    <div id="news">
 
-<img align="right" src="photo.jpeg" img style="float: right; padding-left: 50px;padding-top: 5px">
-
-<p style='text-align: justify;'>  
-Broadly, my research focuses on robust and distributed optimal control for large-scale networks, as well as in and the applications to computational linguistics and biology. I am working with <a href="https://nikolaimatni.github.io/index.html">Prof. Nikolai Matni</a>  (UPenn) and <a href="http://www.columbia.edu/~ja3451/">Prof. James Anderson</a> (Columbia University) on Distributed and Localized Model Predictive Control via System Level Synthesis, and I collaborate with <a href="https://shih-hao-tseng.github.io/website/index.html">Dr. Shih-Hao Tseng</a>  on a parallel implementation of these algorithms in the GPU. I also work with <a href="https://pachterlab.github.io">Prof. Lior Patcher</a> on developing computational tools to answer fundamental questions in linguistics.
-</p>
-<p style='text-align: justify;'>
-During my PhD I have been honored to recieve a <a href=" https://fellowships.deshaw.com"> D. E. Shaw Exploration Fellowship </a> and an  <a href=" https://www.amazon.science/academic-engagements/caltech-names-eight-ai4science-fellows-supported-by-amazon"> Amazon/Caltech AI4Science Fellowship</a>. Prior to starting my Ph.D., I recieved a B.Sc. in Aerospace Engineering from the Polytechnic Univeristy of Madrid in 2016 and a M.Sc. in Space Engineering from Caltech in 2017.  
-</p>
-
-
+    {% for currentyear in (2019..2022) reversed %}
+    <section class="year">
+    <h3>{{ currentyear }}</h3>
+    <ul>
+    {% for news in site.categories.news %}
+    {% capture newsyear %}{{ news.date | date: "%Y"  }}{% endcapture %}
+    {% assign newsyear = newsyear | plus: 0 %}
+    {% if newsyear ==  currentyear %}
+    <li>{{news.content}}</li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+    </section>
+    {% endfor %}
+    </div> 
+</div>
+--->

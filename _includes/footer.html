@@ -1,0 +1,28 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/social/" | relative_url }}"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col footer-col-1" style="text-align: center">
+        {%- include email.html -%}
+      </div>
+
+      <div class="footer-col footer-col-2" style="text-align: center">
+          {%- include youtube.html -%}
+      </div>
+
+      <div class="footer-col footer-col-3" style="text-align: center">
+          {%- include github.html -%}
+      </div>
+      
+      <div class="footer-col footer-col-4" style="text-align: center">
+          {%- include googlescholar.html -%}
+      </div>
+      
+    </div>
+    <p style="text-align: center">
+    Carmen Amo Alonso - {{ 'now' | date: "%Y" }}
+    </p>
+
+</footer>
