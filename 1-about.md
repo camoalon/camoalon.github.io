@@ -1,7 +1,7 @@
 <h3> Welcome to my website! </h3>
 
 <p>
-My name is Carmen Amo Alonso and I am a Postdoctoral Fellow at the <a href="https://ai.ethz.ch">AI Center at ETH</a>. I work at the intersection of Control Theory and Natural Language Processing with <a href="https://idsc.ethz.ch/research-zeilinger/people/person-detail.MTQyNzM3.TGlzdC8xOTI5LDg4NTM5MTE3.html">Prof. Melanie Zeilinger</a>, <a href="https://rycolab.io/#about">Prof. Ryan Cotterell</a>, and <a href="http://people.ee.ethz.ch/~floriand/">Prof. Florian Dörfler</a>. To learn more about my research, head over to the <a href="publications/">Publications tab</a>!
+My name is Carmen Amo Alonso and I work at the intersection of Control Theory and Natural Language Processing with <a href="https://idsc.ethz.ch/research-zeilinger/people/person-detail.MTQyNzM3.TGlzdC8xOTI5LDg4NTM5MTE3.html">Prof. Melanie Zeilinger</a>, <a href="https://rycolab.io/#about">Prof. Ryan Cotterell</a>, and <a href="http://people.ee.ethz.ch/~floriand/">Prof. Florian Dörfler</a>. To learn more about my research, head over to the <a href="publications/">Publications tab</a>!
 </p>
 
 <p>
