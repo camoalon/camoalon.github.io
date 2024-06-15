@@ -5,15 +5,6 @@ permalink: publications/
 order: 2
 ---
 
-<style>
-.bullet-point {
-    margin-right: 5px; /* Reduced margin for less space on the left */
-    color: black;     /* Ensures the bullet point is black */
-    display: inline-block;
-    width: 20px;      /* Adjusts the width to align properly */
-    font-weight: bold
-}
-</style>
 The following list groups publications by topic (* denotes equal contribution).
 For a comprehensive list of publications and corresponding citations, visit my <a href="https://scholar.google.com/citations?user=2snI7NsAAAAJ&hl=en"> Google Scholar</a> page. You can find an open source (and sometimes extended) version of all of these papers on the <a href="https://arxiv.org"> arXiv</a>.
 
@@ -36,7 +27,7 @@ For a comprehensive list of publications and corresponding citations, visit my <
 <h2 style="display: inline-block; margin-top:20px;"> Control for Language: </h2>
 <h3 style="display: inline-block"> Using control theory to enhance language algorithms </h3>
 <!-- Controlled Language Generation -->
-<h3 style= "color: inherit"> Controlled Language Generation </h3>
+<h3 style= "color: inherit"> Controlled language generation </h3>
 <div class="home">
     {% assign publications_nlp = site.categories.publications | where: 'topic', 'nlp' %}
     {% for publication in publications_nlp %}
