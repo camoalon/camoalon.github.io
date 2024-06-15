@@ -4,17 +4,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Carmen Amo Alonso | Carmen Amo Alonso</title>
+<title>Linearly Controlled Language Generation with Performative Guarantees | Carmen Amo Alonso</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Carmen Amo Alonso" />
+<meta property="og:title" content="Linearly Controlled Language Generation with Performative Guarantees" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Carmen Amo Alonso" />
-<meta property="og:description" content="Carmen Amo Alonso" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<meta name="description" content="The increasing prevalence of Large Language Models (LMs) in critical applications highlights the need for controlled language generation strategies that are not only computationally efficient but that also enjoy performance guarantees. To achieve this, we use a common model of concept semantics as linearly represented in an LM’s latent space. In particular, we take the view that natural language generation traces a trajectory in this continuous semantic space, realized by the language model’s hidden activations. This view permits a control-theoretic treatment of text generation in latent space, in which we propose a lightweight, gradient-free intervention that dynamically steers trajectories away from regions corresponding to undesired meanings. Crucially, we show that this intervention, which we compute in closed form, is guaranteed (in probability) to steer the output into the allowed region. Finally, we demonstrate on a toxicity avoidance objective that the intervention steers language away from undesired content while maintaining text quality." />
+<meta property="og:description" content="The increasing prevalence of Large Language Models (LMs) in critical applications highlights the need for controlled language generation strategies that are not only computationally efficient but that also enjoy performance guarantees. To achieve this, we use a common model of concept semantics as linearly represented in an LM’s latent space. In particular, we take the view that natural language generation traces a trajectory in this continuous semantic space, realized by the language model’s hidden activations. This view permits a control-theoretic treatment of text generation in latent space, in which we propose a lightweight, gradient-free intervention that dynamically steers trajectories away from regions corresponding to undesired meanings. Crucially, we show that this intervention, which we compute in closed form, is guaranteed (in probability) to steer the output into the allowed region. Finally, we demonstrate on a toxicity avoidance objective that the intervention steers language away from undesired content while maintaining text quality." />
+<link rel="canonical" href="http://localhost:4000/publications/2024/05/01/LiSeCo.html" />
+<meta property="og:url" content="http://localhost:4000/publications/2024/05/01/LiSeCo.html" />
 <meta property="og:site_name" content="Carmen Amo Alonso" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-05-01T00:00:00+02:00" />
 <script type="application/ld+json">
-{"description":"Carmen Amo Alonso","headline":"Carmen Amo Alonso","url":"http://localhost:4000/","@type":"WebSite","name":"Carmen Amo Alonso","@context":"https://schema.org"}</script>
+{"description":"The increasing prevalence of Large Language Models (LMs) in critical applications highlights the need for controlled language generation strategies that are not only computationally efficient but that also enjoy performance guarantees. To achieve this, we use a common model of concept semantics as linearly represented in an LM’s latent space. In particular, we take the view that natural language generation traces a trajectory in this continuous semantic space, realized by the language model’s hidden activations. This view permits a control-theoretic treatment of text generation in latent space, in which we propose a lightweight, gradient-free intervention that dynamically steers trajectories away from regions corresponding to undesired meanings. Crucially, we show that this intervention, which we compute in closed form, is guaranteed (in probability) to steer the output into the allowed region. Finally, we demonstrate on a toxicity avoidance objective that the intervention steers language away from undesired content while maintaining text quality.","headline":"Linearly Controlled Language Generation with Performative Guarantees","dateModified":"2024-05-01T00:00:00+02:00","datePublished":"2024-05-01T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/publications/2024/05/01/LiSeCo.html"},"url":"http://localhost:4000/publications/2024/05/01/LiSeCo.html","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap"" rel="stylesheet">
   
@@ -55,64 +57,20 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><!-- <h3 style="font-size:18pt"> Welcome to my website! </h3> -->
-  <img id="myphoto" alt="Carmen Amo Alonso" src="/assets/imgs/me.jpg" />
-    <div id="aboutme">
-  <h3> Welcome to my website! </h3>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<p>
-My name is Carmen Amo Alonso and I am a postdoctoral fellow at the <a href="https://ai.ethz.ch">AI Center at ETH Zurich</a>, where I work at the intersection of Control Theory and Natural Language Processing with <a href="https://idsc.ethz.ch/research-zeilinger/people/person-detail.MTQyNzM3.TGlzdC8xOTI5LDg4NTM5MTE3.html">Prof. Melanie Zeilinger</a>, <a href="https://rycolab.io/#about">Prof. Ryan Cotterell</a>, and <a href="http://people.ee.ethz.ch/~floriand/">Prof. Florian Dörfler</a>. To learn more about my research, head over to the <a href="publications/">Publications tab</a>!
-</p>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Linearly Controlled Language Generation with Performative Guarantees</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2024-05-01T00:00:00+02:00" itemprop="datePublished">May 1, 2024
+      </time></p>
+  </header>
 
-<p>
-Before joining ETH, I obtained a Ph.D. in Control and Dynamical Systems at the <a href="https://www.cms.caltech.edu">Department of Computing and Mathematical Sciences at Caltech</a>, where I worked under the advice of <a href="http://www.cds.caltech.edu/~doyle/wiki/index.php?title=Main_Page">Prof. John Doyle</a>. My thesis was awarded with the <a href="https://gradoffice.caltech.edu/current/Clauser#milton-and-francis-clauser-doctoral-prize">Milton and Francis Clauser Doctoral Prize</a>, which recognizes the best Ph.D. dissertation of the academic year across all disciplines at Caltech. During my Ph.D., I was awarded a <a href=" https://www.deshaw.com"> D. E. Shaw Exploration Fellowship </a> and an  <a href=" https://www.amazon.science/academic-engagements/caltech-names-eight-ai4science-fellows-supported-by-amazon"> Amazon AI4Science Fellowship</a>. I also had the honor to have been invited to both <a href="https://risingstars.utexas.edu">EECS Rising Stars</a> and <a href="https://cps-rising-stars2022.com">CPS Rising Stars</a> workshops, and I am proud to have been named a <a href="https://www.cms.caltech.edu/news-events/news/carmen-amo-alonso-tinashe-handina-and-ivan-jimenez-rodriguez-selected-as-leap-fellows">fellow of the LEAP Alliance</a>, whose goal is to increase diversity across the field of computing. Prior to starting my Ph.D., I received a B.Sc. in Aerospace Engineering from the Polytechnic University of Madrid in 2016 and a M.Sc. in Space Engineering from Caltech in 2017.  
-</p>
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>The increasing prevalence of Large Language Models (LMs) in critical applications highlights the need for controlled language generation strategies that are not only computationally efficient but that also enjoy performance guarantees. To achieve this, we use a common model of concept semantics as linearly represented in an LM’s latent space. In particular, we take the view that natural language generation traces a trajectory in this continuous semantic space, realized by the language model’s hidden activations. This view permits a control-theoretic treatment of text generation in latent space, in which we propose a lightweight, gradient-free intervention that dynamically steers trajectories away from regions corresponding to undesired meanings. Crucially, we show that this intervention, which we compute in closed form, is guaranteed (in probability) to steer the output into the allowed region. Finally, we demonstrate on a toxicity avoidance objective that the intervention steers language away from undesired content while maintaining text quality.</p>
 
-<p>
-I am very proud to be a member of the academic community. I am a strong believer that access to education is a fundamental right, and that an educated society is a more equitable and inclusive one. For this reason, I strive to make my research accesible to anyone who is interested in learning about it and I participate in a number of outreach opportunities. I turn many of my papers into <a href="https://www.youtube.com/channel/UCLCJ7kcGJ-yxTg503E3JQaw">Youtube videos</a> for those who prefer watching over reading, and I always make myself available to discuss research:<a href="mailto:camoalonso@ethz.ch"> feel free to reach out!</a> I also believe that in order for research to be more accessible, it must be easily reproducible. You can find all the code needed to reproduce my papers in my <a href="https://github.com/camoalon">Github repository</a>. 
-</p>
-
-
-
-  </div>
-  
-<!---
-<div id="recent-news">
-    <div id="news">
-
-    
-    <section class="year">
-    <h3>2022</h3>
-    <ul>
-    
-    </ul>
-    </section>
-    
-    <section class="year">
-    <h3>2021</h3>
-    <ul>
-    
-    </ul>
-    </section>
-    
-    <section class="year">
-    <h3>2020</h3>
-    <ul>
-    
-    </ul>
-    </section>
-    
-    <section class="year">
-    <h3>2019</h3>
-    <ul>
-    
-    </ul>
-    </section>
-    
-    </div> 
-</div>
---->
-</div>
+  </div><a class="u-url" href="/publications/2024/05/01/LiSeCo.html" hidden></a>
+</article>
 
       </div>
     </main><footer class="site-footer h-card">

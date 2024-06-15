@@ -6,7 +6,8 @@ authors: "J.S. Li, C. Amo Alonso"
 paper-link: https://arxiv.org/abs/2303.11264
 other-links: 
   - Code: https://github.com/flyingpeach/LocalizedMPCPerformance
-journal: To appear in IEEE Open Journal of Control Systems 
+  - Video: https://www.youtube.com/watch?v=X6AiGiXdxhQ&t=2073s
+journal: IEEE Open Journal of Control Systems 
 type: journal
 remark: 
 topic: dmpc

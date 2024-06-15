@@ -6,9 +6,11 @@ authors: "C. Amo Alonso"
 paper-link: https://thesis.library.caltech.edu/15262/
 other-links: 
   - Code: https://github.com/unstable-zeros/dl-mpc-sls
-journal: 
+  - Video: https://www.youtube.com/watch?v=X6AiGiXdxhQ
+journal: PhD Thesis
 type: thesis
 remark: 
+topic: dmpc
 
 ---
 

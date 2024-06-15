@@ -1,0 +1,38 @@
+<span class="title"><a style="color:black;" href="{{ publication.paper-link }}">{{ publication.title }}</a></span>
+{% for links in publication.other-links %}
+    {% for link in links %}
+        <a style="font-size:14px;" href="{{ link[1] }}">[{{ link[0] }}]</a>
+    {% endfor %}
+{% endfor %}
+<br>
+<span class="authors">{{ publication.authors }}</span><br>
+{% if publication.journal %}
+    <span class="journal">{{ publication.journal }},</span>
+{% endif %}
+<span class="date">{{ publication.year | date: "%Y" }}.</span>
+
+<!--
+<nobr>
+    <a style="font-size: 14px; color: black;" id="show-abstract-{{ forloop.index }}" href="#">
+        <span id="abstract-icon-{{ forloop.index }}" class="ui-icon ui-icon-plus"></span>
+        [Click here to read the abstract]
+    </a>
+</nobr>
+
+<p class="abstract-info minimize" id="abstract-info-{{ forloop.index }}" style="display: none;">
+    {{ publication.content | strip_html }}
+</p>
+
+<script>
+$(document).ready(function(){
+    $("#abstract-info-{{ forloop.index }}").hide();
+    $("#show-abstract-{{ forloop.index }}").click(function(e){
+        e.preventDefault();
+        var icon = $("#abstract-icon-{{ forloop.index }}");
+        icon.toggleClass("ui-icon-plus");
+        icon.toggleClass("ui-icon-minus");
+        $("#abstract-info-{{ forloop.index }}").toggle();
+    });
+});
+</script>
+-->

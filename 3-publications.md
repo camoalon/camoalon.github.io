@@ -5,140 +5,80 @@ permalink: publications/
 order: 2
 ---
 
-For a comprehensive list of publications and corresponding citations, visit my <a href="https://scholar.google.com/citations?user=2snI7NsAAAAJ&hl=en"> Google Scholar</a> page.
+<style>
+.bullet-point {
+    margin-right: 5px; /* Reduced margin for less space on the left */
+    color: black;     /* Ensures the bullet point is black */
+    display: inline-block;
+    width: 20px;      /* Adjusts the width to align properly */
+    font-weight: bold
+}
+</style>
+The following list groups publications by topic (* denotes equal contribution).
+For a comprehensive list of publications and corresponding citations, visit my <a href="https://scholar.google.com/citations?user=2snI7NsAAAAJ&hl=en"> Google Scholar</a> page. You can find an open source (and sometimes extended) version of all of these papers on the <a href="https://arxiv.org"> arXiv</a>.
 
-You can find an open source (and sometimes extended) version of all of these papers on the <a href="https://arxiv.org"> arXiv</a>.
-
-<h2 style="margin-top:30px;"> Journal Articles </h2>
-
+<!-- Language to Control -->
+<h2 style="display: inline-block; margin-top:10px;"> Language to Control: </h2>
+<h3 style="display: inline-block"> Interfacing controllers with natural language </h3>
+<!-- Robotics -->
+<h3 style="color: inherit"> For robotics </h3>
 <div class="home">
-  
-  
-    {% for publication in site.categories.publications %}
-
-
+    {% assign publications_l2c = site.categories.publications | where: 'topic', 'l2c' %}
+    {% for publication in publications_l2c %}
 <div class="publication" id="publication-{{publication.id}}">
-    {% if publication.type == "journal" %}
-    <p><span class="title"><a style="color:black;" href="{{publication.paper-link}}">{{ publication.title }}</a></span> 
-        {% for links in publication.other-links %}
-        {% for link in links %}
-        <a style="font-size:14px;" href="{{link[1]}}">[{{link[0]}}]</a>
-        {% endfor %}
-        {% endfor %} <br>
-       <span class="authors">{{ publication.authors }}</span><br> 
-        {% if publication.journal %}
-       <span class="journal">{{ publication.journal }},</span>
-        {% endif %}
-    <span class="date">{{ publication.year|date:"%Y" }}.</span>
-        <nobr><a style="font-size:14px;color:black;" id="show-abstract-{{forloop.index}}"><span id="abstract-icon-{{forloop.index}}" class="ui-icon ui-icon-plus"></span> [Click here to read the abstract]</a></nobr>
+    <p>
+     {% include publication_details.html index=forloop.index%}
     </p>
-    <p hidden class="abstract-info minimize" id="abstract-info-{{forloop.index}}">{{ publication.content | strip_html }}</p>
-    
-    {% endif %}
-
 </div>
-
 {% endfor %}
 
-
-<h2 style="margin-top:30px;"> Conference Proceedings </h2>
-
-    {% for publication in site.categories.publications %}
-
-<div class="publication" id="publication-{{publication.id}}">
-    {% if publication.type == "conference" %}
-    <p><span class="title"><a style="color:black;" href="{{publication.paper-link}}">{{ publication.title }}</a></span> 
-        {% for links in publication.other-links %}
-        {% for link in links %}
-        <a style="font-size:14px;" href="{{link[1]}}">[{{link[0]}}]</a>
-        {% endfor %}
-        {% endfor %} <br>
-       <span class="authors">{{ publication.authors }}</span><br> 
-        {% if publication.journal %}
-       <span class="journal">{{ publication.journal }},</span>
-        {% endif %}
-    <span class="date">{{ publication.date|date:"%Y" }}.</span>
-        <nobr><a style="font-size:14px;color:black;" id="show-abstract-{{forloop.index}}"><span id="abstract-icon-{{forloop.index}}" class="ui-icon ui-icon-plus"></span> [Click here to read the abstract]</a></nobr>
-        {% if publication.remark %} <br>
-        <span class="remark" style="color:black;font-weight:1000;margin-bottom:50px"> {{ publication.remark }}</span>
-        {% endif %}
-    </p>
-    <p hidden class="abstract-info minimize" id="abstract-info-{{forloop.index}}">{{ publication.content | strip_html }}</p>
-    
-    {% endif %}
-
-</div>
-
-{% endfor %}
-
-</div>
-
-<h2 style="margin-top:30px;"> Ph.D. Thesis </h2>
-
+<!-- Control for Language -->
+<h2 style="display: inline-block; margin-top:20px;"> Control for Language: </h2>
+<h3 style="display: inline-block"> Using control theory to enhance language algorithms </h3>
+<!-- Controlled Language Generation -->
+<h3 style= "color: inherit"> Controlled Language Generation </h3>
 <div class="home">
-  
-  
-    {% for publication in site.categories.publications %}
-
-
+    {% assign publications_nlp = site.categories.publications | where: 'topic', 'nlp' %}
+    {% for publication in publications_nlp %}
 <div class="publication" id="publication-{{publication.id}}">
-    {% if publication.type == "thesis" %}
-    <p><span class="title"><a style="color:black;" href="{{publication.paper-link}}">{{ publication.title }}</a></span> 
-        {% for links in publication.other-links %}
-        {% for link in links %}
-        <a style="font-size:14px;" href="{{link[1]}}">[{{link[0]}}]</a>
-        {% endfor %}
-        {% endfor %} <br>
-       <span class="authors">{{ publication.authors }},</span> 
-       <span class="date">{{ publication.year|date:"%Y" }}.</span>
-        <a style="font-size:14px;color:black;" id="show-abstract-{{forloop.index}}"><span id="abstract-icon-{{forloop.index}}" class="ui-icon ui-icon-plus"></span> [Click here to read the abstract]</a>
+    <p>
+     {% include publication_details.html index=forloop.index%}
     </p>
-    <p hidden class="abstract-info minimize" id="abstract-info-{{forloop.index}}">{{ publication.content | strip_html }}</p>
-    
-    {% endif %}
-
 </div>
-
+{% endfor %}
+<!-- Foundation Models -->
+<h3 style="margin-top:10px;  color: inherit"> Foundation models </h3>
+<div class="home">
+    {% assign publications_foundation = site.categories.publications | where: 'topic', 'foundation' %}
+    {% for publication in publications_foundation %}
+<div class="publication" id="publication-{{publication.id}}">
+    <p>
+     {% include publication_details.html index=forloop.index%}
+    </p>
+</div>
 {% endfor %}
 
-
-
-<script>
- $(document).ready(function(){
-     {% for publication in site.categories.publications %}
-     $("#abstract-info-{{forloop.index}}").hide();
-     $("#show-abstract-{{forloop.index}}").click(function(){
-         var icon = $("#abstract-icon-{{forloop.index}}");
-         icon.toggleClass("ui-icon-plusthick");
-         icon.toggleClass("ui-icon-minusthick");
-         $("#abstract-info-{{forloop.index}}").toggle();
-     });
-     {% endfor %}
- });
- // http://jsfiddle.net/iambriansreed/bjdSF/
- jQuery(function(){
-     var minimized_elements = $('p.minimize');
-     var max_length = 100000;
-     minimized_elements.each(function(){
-         var t = $(this).text();
-         if(t.length < max_length) return;
-
-         $(this).html(
-             t.slice(0, max_length)+'<span>... </span><a href="#" class="more">More</a>'+
-             '<span style="display:none;">'+ t.slice(max_length, t.length)+' <a href="#" class="less">Less</a></span>'
-         );
-
-     });
-
-     $('a.more', minimized_elements).click(function(event){
-         event.preventDefault();
-         $(this).hide().prev().hide();
-         $(this).next().show();
-     });
-
-     $('a.less', minimized_elements).click(function(event){
-         event.preventDefault();
-         $(this).parent().hide().prev().show().prev().show();
-     });
- });
-</script>
+<!-- Optimal Control -->
+<h2 style="margin-top:30px;"> Distributed Optimal Control </h2>
+<!-- DLMPC -->
+<h3 style="margin-top:10px;  color: inherit"> Distributed and Localized Model Predictive Control </h3>
+<div class="home">
+    {% assign publications_dmpc = site.categories.publications | where: 'topic', 'dmpc' %}
+    {% for publication in publications_dmpc %}
+<div class="publication" id="publication-{{publication.id}}">
+    <p>
+    {% include publication_details.html index=forloop.index%}
+    </p>
+</div>
+{% endfor %}
+<!-- Other -->
+<h3 style="margin-top:10px;  color: inherit"> System Level Synthesis and Applications </h3>
+    {% assign publications_other = site.categories.publications | where: 'topic', 'other_control' %}
+    {% for publication in publications_other %}
+<div class="publication" id="publication-{{publication.id}}">
+    <p>
+    {% include publication_details.html index=forloop.index%}
+    </p>
+</div>
+{% endfor %}
+</div>

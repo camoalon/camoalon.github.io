@@ -6,6 +6,7 @@ authors: "C. Amo Alonso, J.S. Li, J. Anderson, and N. Matni"
 paper-link: https://ieeexplore.ieee.org/document/10083211
 other-links: 
   - Code: https://github.com/unstable-zeros/dl-mpc-sls/tree/master/2022_TNCS_DLMPC-Part-II
+  - Video: https://youtu.be/X6AiGiXdxhQ?t=1291
 journal: IEEE Transactions on Control of Network Systems 
 type: journal
 remark: 
