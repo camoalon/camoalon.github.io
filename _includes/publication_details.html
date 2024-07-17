@@ -1,7 +1,7 @@
-<span class="title"><a style="color:black;" href="{{ publication.paper-link }}">{{ publication.title }}</a></span>
+<span class="title"><a href="{{ publication.paper-link }}">{{ publication.title }}</a></span>
 {% for links in publication.other-links %}
     {% for link in links %}
-        <a style="font-size:14px;" href="{{ link[1] }}">[{{ link[0] }}]</a>
+        <a style="font-size:14px; color:black;" href="{{ link[1] }}">[{{ link[0] }}]</a>
     {% endfor %}
 {% endfor %}
 <br>

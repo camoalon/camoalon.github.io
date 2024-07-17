@@ -2,11 +2,11 @@
 layout: default
 title: Publications
 permalink: publications/
-order: 2
+order: 3
 ---
 
-The following list groups publications by topic (* denotes equal contribution).
-For a comprehensive list of publications and corresponding citations, visit my <a href="https://scholar.google.com/citations?user=2snI7NsAAAAJ&hl=en"> Google Scholar</a> page. You can find an open source (and sometimes extended) version of all of these papers on the <a href="https://arxiv.org"> arXiv</a>.
+<p> The following list groups publications by topic (* denotes equal contribution).
+For a comprehensive list of publications and corresponding citations, visit my <a href="https://scholar.google.com/citations?user=2snI7NsAAAAJ&hl=en"> Google Scholar</a> page. You can find an open source (and sometimes extended) version of all of these papers on the <a href="https://arxiv.org"> arXiv</a>. </p>
 
 <!-- Language to Control -->
 <h2 style="display: inline-block; margin-top:10px;"> Language to Control: </h2>

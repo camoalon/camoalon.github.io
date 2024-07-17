@@ -12,7 +12,7 @@ order: 0
   <!-- <h3 style="font-size:18pt"> Welcome to my website! </h3> -->
   <img id="myphoto" alt="Carmen Amo Alonso" src="{{ "/assets/imgs/me.jpg" | relative_url }}"/>
     <div id="aboutme">
-  {% include_relative 1-about.md %}
+  {% include_relative 0-about.md %}
   </div>
   
 <!---

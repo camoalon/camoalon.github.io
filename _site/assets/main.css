@@ -70,7 +70,7 @@ table td { border: 1px solid #dbdbdb; }
 .site-title { font-size: 34px; font-weight: 350; line-height: 76.5px; letter-spacing: 0px; margin-bottom: 0; float: left; }
 .site-title, .site-title:visited { color: #424242; }
 
-.site-nav { font-size: 20.4px; float: right; line-height: 57.375px; margin: 14px; }
+.site-nav { font-size: 17px; float: right; line-height: 57.375px; margin: 14px; }
 .site-nav .nav-trigger { display: none; }
 .site-nav .menu-icon { display: none; }
 .site-nav .page-link { color: #424242; line-height: 1.5; }

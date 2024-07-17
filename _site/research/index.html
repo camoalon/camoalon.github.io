@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Curriculum | Carmen Amo Alonso</title>
+<title>Research | Carmen Amo Alonso</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Curriculum" />
+<meta property="og:title" content="Research" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Carmen Amo Alonso" />
 <meta property="og:description" content="Carmen Amo Alonso" />
-<link rel="canonical" href="http://localhost:4000/curriculum/" />
-<meta property="og:url" content="http://localhost:4000/curriculum/" />
+<link rel="canonical" href="http://localhost:4000/research/" />
+<meta property="og:url" content="http://localhost:4000/research/" />
 <meta property="og:site_name" content="Carmen Amo Alonso" />
 <script type="application/ld+json">
-{"description":"Carmen Amo Alonso","headline":"Curriculum","url":"http://localhost:4000/curriculum/","@type":"WebPage","@context":"https://schema.org"}</script>
+{"description":"Carmen Amo Alonso","headline":"Research","url":"http://localhost:4000/research/","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap"" rel="stylesheet">
   
@@ -57,9 +57,29 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <p style="text-align: justify;"> Feel free to <a href="mailto:camoalonso@ethz.ch">email me</a> for the most up-to-date version.  </p>
+        <p style="text-align: justify;"> Imagine a system that has a property that we can measure. And now imagine that this property evolves with time. We call this system a <b>dynamical system</b>. Many things can be studied as a dynamical system: a car (position and velocity), a robot (joint angles and velocities), the power network (voltage and frequency), the metabolic newtork (metabolites concentrations), etc. In control theory, we are interested in understanding how to analyze and control the evolution of these systems so they have desirable properties: the car does not crash, the voltage is kept within limits, the robot moves to the desired position, etc. During my Ph.D., I studied how to effective design control strategies for large sparse networks. Lately, I have revived my fascination for natural languge and I am very intersted in language technologies. In particular, (i) how to use natural language to design standard control strategies (such as those for robots or cars), and (ii) how language algorithms can be viewed as dynamical systems, so control theory can help us to improve their design. </p>
 
-<object data="../assets/pdfs/cv.pdf" width="1000" height="1000" type="application/pdf"></object>
+<h3> Language to Control </h3>
+
+<p style="text-align: justify;"> Current principled strategies to control dynamical systems involve properly describing the problem in mathematical terms. This requires trained and skilled engineers to design the appropriate commands, which creates a gap in the communication possibilities between lay-people and technology. Ideally, we would speak to our machines to control their behavior in the same way that we talk to each other and influence one another. However, relying solely on language algorithms to do this could be a dangerous route given their current limitations. My goal is to interface the current principled control strategies with language algorithms, allowing us to talk to our machines with the flexibility and accessibility of natural language, while still benefiting from the theoretical guarantees and explainable behavior of classical control techniques. We are exploring these ideas for robotic applications (check out <a href="https://narrate-mpc.github.io">NARRATE!</a>) among others (coming soon)!</p>
+
+<h3> Control for Language </h3>
+
+<p style="text-align: justify;"> Language algorithms are currently treated as black boxes, leading to a significant lack of understanding of their behavior. Yet, language algorithms are <i>also</i> a dynamical system: each token (word) produced can be seen as the property that changes with time. Can we use control theoretical tools to enhance our understanding of these systems? Can we study them within a principled mathematical framework? Ultimately, can we have better control on their outputs? I aim to answer these questions in two ways. On one hand, I work with novel foundation model architectures such as state-space models --a native framework to control theorists-- to provide insights on their overall behavior and relevant components (check out some of <a href="https://arxiv.org/abs/2405.15731">our work</a>!). On the other hand, I apply classical control techinques to standard architectures to steer their behavior towards a more desirable one, such as reducing toxicity (check out our <a href="https://arxiv.org/abs/2405.15454">latest work</a>!). </p>
+
+<h3> Distributed Optimal Control </h3>
+
+<p style="text-align: justify;"> The internet, the power network, a fleet of autonomous cars, or bacterial metabolism: large-scale networks are everywhere! We would like to design strategies to control their behavior in the same way that we do for centralized systems (a single car, an aircraft, etc.). However, these networks are composed by many agents (subsystems) that can only communicate to a few neighbors. The sparsity of the networks has been seen as a mejor challenge, as they hinder the global communication exchanges. 
+
+Contrary to prior works, my Ph.D. research capitalizes on this sparsity: we restrict each agent in the network to only communicate with a small neighborhood of agents as opposed to the entire network. By integrating ideas from control theory, optimization and learning into this framing, we developed a new set of algorithms and theoretical results to optimally control distributed bio and cyber-physical systems for safety-critical applications. Specifically, we created a <a href="https://www.proquest.com/openview/e84a2e0c4c2d50491854356e9c5c1cd7/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y"><b> Distributed and Localized Model Predictive Control (DLMPC)</b></a> framework, which offers numerous advantages! Notably, both the controller synthesis and implementation are fully distributed and scalable to arbitrary network sizes (see details <a href="https://ieeexplore.ieee.org/abstract/document/9939038">here</a>). Also, we provide theoretical guarantees for asymptotic stability and recursive feasibility without strong assumptions, ensuring minimal conservativeness, no added computational burden, and scalable computations (see details <a href="https://ieeexplore.ieee.org/abstract/document/10083211">here</a>). 
+
+Our findings indicate that restricting communication to a small neighborhood can yield significant computational benefits. This leads us to an important question: what are the trade-offs? Are the resulting policies less optimal than those that allow communication across the entire network? We demonstrate that for sparse systems, including local communication constraints can be as optimal as centralized MPC while enhancing scalability (see details <a href="https://ieeexplore.ieee.org/abstract/document/10229197">here</a>). 
+
+This result paves the way for broader applications of DLMPC. Besides distributed systems, DLMPC can replace the standard MPC in centralized systems to accelerate computations. Given that current GPUs also operate with local communication exchanges, DLMPC computation can be naturally parallelized in GPU (see details <a href="https://ieeexplore.ieee.org/abstract/document/9831839">here</a>). 
+
+Lastly, we showed that our framework is applicable even when no model of the system is available and only past trajectories can be used (just like language!). In this scenario, each agent only needs to gather data from its local neighborhood, making the approach suitable for large-scale networks (see details <a href="https://ieeexplore.ieee.org/abstract/document/9772975">here</a>). 
+
+Together, these different frontiers can be layered to create effective and scalable control architectures for real-world large-scale systems. My PhD work shows how all this can be achieved by leveraging the intrinsic and ubiquitous sparsity of large-scale distributed systems in technology and biology.</p>
 
 
       </div>
