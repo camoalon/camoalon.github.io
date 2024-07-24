@@ -5,7 +5,7 @@ permalink: teaching/
 order: 2
 ---
 
-<p style="text-align: justify;"> For me, a fundamental aspect of research is sharing knowledge with others. I really enjoy mentoring students, giving lectures, and taking part in outreach opportunities. While doing these, I learn a log too: everyone has something to teach us! </p>
+<p style="text-align: justify;"> For me, a fundamental aspect of research is sharing knowledge with others. I really enjoy mentoring students, giving lectures, and taking part in outreach opportunities. While doing these, I learn a lot too: everyone has something to teach us! </p>
 
 <h3> Research mentoring </h3>
 
