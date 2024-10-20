@@ -9,7 +9,7 @@ order: 2
 
 <h3> Research mentoring </h3>
 
-<p style="text-align: justify;"> I regularly mentor undergraduate and graduate students on a number of research projects. If you are a student <b>at ETH</b> and would like to work with me for your thesis or semester project, please <a href= "mailto:camoalonso@ethz.ch"> get in touch!</a> Some of the available research topics can be found <a href= "https://idsc.ethz.ch/education/theses-semester-projects.html"> here</a> and <a href= "https://sirop.org/app/"> here</a>, but I am always open to new ideas as well! </p>
+<p style="text-align: justify;"> I regularly mentor undergraduate and graduate students on a number of research projects. If you are a student <b>at Stanford</b> and would like to work with me, please <a href= "mailto:camoalonso@ethz.ch"> get in touch!</a> </p>
 
 <h3> Institutional teaching </h3>
 

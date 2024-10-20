@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://localhost:4000/publications/" />
 <meta property="og:site_name" content="Carmen Amo Alonso" />
 <script type="application/ld+json">
-{"description":"Carmen Amo Alonso","headline":"Publications","url":"http://localhost:4000/publications/","@type":"WebPage","@context":"https://schema.org"}</script>
+{"headline":"Publications","url":"http://localhost:4000/publications/","description":"Carmen Amo Alonso","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap"" rel="stylesheet">
   
@@ -87,7 +87,7 @@ For a comprehensive list of publications and corresponding citations, visit my <
 <br />
 <span class="authors">S. Ismail*,  A. Arbues*,  R. Cotterell,  R. Zurbrügg, C. Amo Alonso</span><br />
 
-    <span class="journal">Accepted in the International Conference on Intelligent Robots and Systems (IROS),</span>
+    <span class="journal">International Conference on Intelligent Robots and Systems (IROS),</span>
 
 <span class="date">2024.</span>
 
@@ -137,9 +137,9 @@ $(document).ready(function(){
 <br />
 <span class="authors">E. Cheng, M. Baroni, C. Amo Alonso</span><br />
 
-    <span class="journal">Submitted to Conference on Neural Information Processing Systems (NeurIPS),</span>
+    <span class="journal">Submitted to International Conference on Learning Representations (ICLR),</span>
 
-<span class="date">2024.</span>
+<span class="date">2025.</span>
 
 <!--
 <nobr>
@@ -176,16 +176,16 @@ $(document).ready(function(){
 <div class="home">
     
     
-<div class="publication" id="publication-/publications/2024/05/01/DSF">
+<div class="publication" id="publication-/publications/2024/05/01/LambdaSkip">
     <p>
-     <span class="title"><a href="https://arxiv.org/abs/2405.15731">Understanding the differences in Foundation Models: Attention, SSMs, and RNNs</a></span>
+     <span class="title"><a href="https://arxiv.org/abs/2410.10609">Lambda-Skip Connections: the architectural component that prevents Rank Collapse</a></span>
 
 <br />
-<span class="authors">J. Sieber*, C. Amo Alonso*, A. Didier, M. N. Zeilinger, A. Orvieto</span><br />
+<span class="authors">F. A. Joseph, J. Sieber, M. N. Zeilinger, C. Amo Alonso</span><br />
 
-    <span class="journal">Submitted to Conference on Neural Information Processing Systems (NeurIPS),</span>
+    <span class="journal">Submitted to International Conference on Learning Representations (ICLR),</span>
 
-<span class="date">2024.</span>
+<span class="date">2025.</span>
 
 <!--
 <nobr>
@@ -196,7 +196,7 @@ $(document).ready(function(){
 </nobr>
 
 <p class="abstract-info minimize" id="abstract-info-1" style="display: none;">
-    Softmax attention is the principle backbone of foundation models for various artificial intelligence applications, yet its quadratic complexity in sequence length can limit its inference throughput in long-context settings. To address this challenge, alternative architectures such as linear attention, State Space Models (SSMs), and Recurrent Neural Networks (RNNs) have been considered as more efficient alternatives. While connections between these approaches exist, such models are commonly developed in isolation and there is a lack of theoretical understanding of the shared principles underpinning these architectures and their subtle differences, greatly influencing performance and scalability. In this paper, we introduce the Dynamical Systems Framework (DSF), which allows a principled investigation of all these architectures in a common representation. Our framework facilitates rigorous comparisons, providing new insights on the distinctive characteristics of each model class. For instance, we compare linear attention and selective SSMs, detailing their differences and conditions under which both are equivalent. We also provide principled comparisons between softmax attention and other model classes, discussing the theoretical conditions under which softmax attention can be approximated. Additionally, we substantiate these new insights with empirical validations and mathematical arguments. This shows the DSF’s potential to guide the systematic development of future more efficient and scalable foundation models.
+    Rank collapse, a phenomenon where embedding vectors in sequence models rapidly converge to a uniform token or equilibrium state, has recently gained attention in the deep learning literature. This phenomenon leads to reduced expressivity and potential training instabilities due to vanishing gradients. Empirical evidence suggests that architectural components like skip connections, LayerNorm, and MultiLayer Perceptrons (MLPs) play critical roles in mitigating rank collapse. While this issue is well-documented for transformers, alternative sequence models, such as State Space Models (SSMs), which have recently gained prominence, have not been thoroughly examined for similar vulnerabilities. This paper extends the theory of rank collapse from transformers to SSMs using a unifying framework that captures both architectures. We study how a parametrized version of the classic skip connection component, which we call \emph{lambda-skip connections}, provides guarantees for rank collapse prevention. Through analytical results, we present a sufficient condition to guarantee prevention of rank collapse across all the aforementioned architectures. We also study the necessity of this condition via ablation studies and analytical examples. To our knowledge, this is the first study that provides a general guarantee to prevent rank collapse, and that investigates rank collapse in the context of SSMs, offering valuable understanding for both theoreticians and practitioners. Finally, we validate our findings with experiments demonstrating the crucial role of architectural components such as skip connections and gating mechanisms in preventing rank collapse.
 
 </p>
 
@@ -217,18 +217,14 @@ $(document).ready(function(){
     </p>
 </div>
 
-<div class="publication" id="publication-/publications/2024/03/01/FM-CDC">
+<div class="publication" id="publication-/publications/2024/05/01/DSF">
     <p>
-     <span class="title"><a href="https://arxiv.org/abs/2403.16899">State Space Models as Foundation Models: A Control Theoretic Overview</a></span>
-
-    
-        <a style="font-size:14px; color:black;" href="https://github.com/jsie7/ssm-benchmark">[Code]</a>
-    
+     <span class="title"><a href="https://arxiv.org/abs/2405.15731">Understanding the differences in Foundation Models: Attention, SSMs, and RNNs</a></span>
 
 <br />
-<span class="authors">C. Amo Alonso*, J. Sieber*, M. N. Zeilinger</span><br />
+<span class="authors">J. Sieber*, C. Amo Alonso*, A. Didier, M. N. Zeilinger, A. Orvieto</span><br />
 
-    <span class="journal">Submitted to the Control and Decision Conference (CDC),</span>
+    <span class="journal">Accepted to Conference on Neural Information Processing Systems (NeurIPS),</span>
 
 <span class="date">2024.</span>
 
@@ -241,7 +237,7 @@ $(document).ready(function(){
 </nobr>
 
 <p class="abstract-info minimize" id="abstract-info-2" style="display: none;">
-    In recent years, there has been a growing interest in integrating linear state-space models (SSM) in deep neural network architectures of foundation models. This is exemplified by the recent success of Mamba, showing better performance than the state-of-the-art Transformer architectures in language tasks. Foundation models, like e.g. GPT-4, aim to encode sequential data into a latent space in order to learn a compressed representation of the data. The same goal has been pursued by control theorists using SSMs to efficiently model dynamical systems. Therefore, SSMs can be naturally connected to deep sequence modeling, offering the opportunity to create synergies between the corresponding research areas. This paper is intended as a gentle introduction to SSM-based architectures for control theorists and summarizes the latest research developments. It provides a systematic review of the most successful SSM proposals and highlights their main features from a control theoretic perspective. Additionally, we present a comparative analysis of these models, evaluating their performance on a standardized benchmark designed for assessing a model’s efficiency at learning long sequences.
+    Softmax attention is the principle backbone of foundation models for various artificial intelligence applications, yet its quadratic complexity in sequence length can limit its inference throughput in long-context settings. To address this challenge, alternative architectures such as linear attention, State Space Models (SSMs), and Recurrent Neural Networks (RNNs) have been considered as more efficient alternatives. While connections between these approaches exist, such models are commonly developed in isolation and there is a lack of theoretical understanding of the shared principles underpinning these architectures and their subtle differences, greatly influencing performance and scalability. In this paper, we introduce the Dynamical Systems Framework (DSF), which allows a principled investigation of all these architectures in a common representation. Our framework facilitates rigorous comparisons, providing new insights on the distinctive characteristics of each model class. For instance, we compare linear attention and selective SSMs, detailing their differences and conditions under which both are equivalent. We also provide principled comparisons between softmax attention and other model classes, discussing the theoretical conditions under which softmax attention can be approximated. Additionally, we substantiate these new insights with empirical validations and mathematical arguments. This shows the DSF’s potential to guide the systematic development of future more efficient and scalable foundation models.
 
 </p>
 
@@ -254,6 +250,51 @@ $(document).ready(function(){
         icon.toggleClass("ui-icon-plus");
         icon.toggleClass("ui-icon-minus");
         $("#abstract-info-2").toggle();
+    });
+});
+</script>
+-->
+
+    </p>
+</div>
+
+<div class="publication" id="publication-/publications/2024/03/01/FM-CDC">
+    <p>
+     <span class="title"><a href="https://arxiv.org/abs/2403.16899">State Space Models as Foundation Models: A Control Theoretic Overview</a></span>
+
+    
+        <a style="font-size:14px; color:black;" href="https://github.com/jsie7/ssm-benchmark">[Code]</a>
+    
+
+<br />
+<span class="authors">C. Amo Alonso*, J. Sieber*, M. N. Zeilinger</span><br />
+
+    <span class="journal">Submitted to the American Control Conference (ACC),</span>
+
+<span class="date">2025.</span>
+
+<!--
+<nobr>
+    <a style="font-size: 14px; color: black;" id="show-abstract-3" href="#">
+        <span id="abstract-icon-3" class="ui-icon ui-icon-plus"></span>
+        [Click here to read the abstract]
+    </a>
+</nobr>
+
+<p class="abstract-info minimize" id="abstract-info-3" style="display: none;">
+    In recent years, there has been a growing interest in integrating linear state-space models (SSM) in deep neural network architectures of foundation models. This is exemplified by the recent success of Mamba, showing better performance than the state-of-the-art Transformer architectures in language tasks. Foundation models, like e.g. GPT-4, aim to encode sequential data into a latent space in order to learn a compressed representation of the data. The same goal has been pursued by control theorists using SSMs to efficiently model dynamical systems. Therefore, SSMs can be naturally connected to deep sequence modeling, offering the opportunity to create synergies between the corresponding research areas. This paper is intended as a gentle introduction to SSM-based architectures for control theorists and summarizes the latest research developments. It provides a systematic review of the most successful SSM proposals and highlights their main features from a control theoretic perspective. Additionally, we present a comparative analysis of these models, evaluating their performance on a standardized benchmark designed for assessing a model’s efficiency at learning long sequences.
+
+</p>
+
+<script>
+$(document).ready(function(){
+    $("#abstract-info-3").hide();
+    $("#show-abstract-3").click(function(e){
+        e.preventDefault();
+        var icon = $("#abstract-icon-3");
+        icon.toggleClass("ui-icon-plus");
+        icon.toggleClass("ui-icon-minus");
+        $("#abstract-info-3").toggle();
     });
 });
 </script>
