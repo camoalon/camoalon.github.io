@@ -10,6 +10,7 @@ other-links:
 journal: IEEE Transactions on Control of Network Systems 
 type: journal
 remark: 
+award: "Best Paper Award"
 topic: dmpc
 
 ---
