@@ -1,7 +1,7 @@
 <h3> Welcome to my website! </h3>
 
 <p>
-My name is Carmen Amo Alonso and I am a <a href="https://schmidtsciencefellows.org"> Schmidt Science Fellow</a>. I am affiliated with the <a href="https://www.cs.stanford.edu">Computer Science Department at Stanford</a>, where I work with <a href="https://cs.stanford.edu/~chrismre/">Chris Ré</a> at the intersection of Control Theory and Deep Learning, particularly for language applications. To learn more about my research, head over to the <a href="research/">Research tab</a>!
+My name is Carmen Amo Alonso and I am a <a href="https://schmidtsciencefellows.org"> Schmidt Science Fellow</a>. I am affiliated with the <a href="https://www.cs.stanford.edu">Computer Science Department at Stanford</a>, where I work at the intersection of Control Theory and Language Models. To learn more about my research, head over to the <a href="research/">Research tab</a>!
 </p>
 
 <p>
