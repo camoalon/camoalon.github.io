@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
  
- <link rel="icon" type="image/png" sizes="32x32" href="/assets/imgs/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="/assets/imgs/favicon-caa.png">
 
 
 
@@ -41,7 +41,7 @@
    crossorigin=""></script><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Carmen Amo Alonso" /></head>
 <body><header class="site-header" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Carmen Amo Alonso</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Carmen <span class="small-caps">AMO ALONSO</span></a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -60,36 +60,25 @@
         <p> The following list groups publications by topic (* denotes equal contribution).
 For a comprehensive list of publications and corresponding citations, visit my <a href="https://scholar.google.com/citations?user=2snI7NsAAAAJ&amp;hl=en"> Google Scholar</a> page. You can find an open source (and sometimes extended) version of all of these papers on the <a href="https://arxiv.org"> arXiv</a>. </p>
 
-<!-- Language to Control -->
-<h2 style="display: inline-block; margin-top:10px;"> Language to Control: </h2>
-<h3 style="display: inline-block"> Interfacing controllers with natural language </h3>
-<!-- Robotics -->
-<h3 style="color: inherit"> For robotics </h3>
+<!-- Artificial Intelligence meets Control Theory -->
+<h2 style="display: inline-block; margin-top:10px;"> Artificial Intelligence meets Control Theory </h2>
+
+<!-- Mixer Block -->
+<h3 style="margin-top:10px; color: #39653B;"> Mixer Block </h3>
 <div class="home">
     
     
-<div class="publication" id="publication-/publications/2024/02/01/NARRATE">
+<div class="publication" id="publication-/publications/2025/10/25/design-principles">
     <p>
-     <span class="title"><a href="https://arxiv.org/abs/2403.10762">NARRATE: Versatile Language Architecture for Optimal Control in Robotics</a></span>
-
-    
-        <a style="font-size:14px; color:black;" href="https://narrate-mpc.github.io">[Website]</a>
-    
-
-    
-        <a style="font-size:14px; color:black;" href="https://github.com/vateseif/narrate">[Code]</a>
-    
-
-    
-        <a style="font-size:14px; color:black;" href="https://www.youtube.com/watch?v=8__CQMCkdws">[Video]</a>
-    
+     <span class="title"><a href="https://arxiv.org/pdf/2510.09389">Design Principles for Sequence Models via Coefficient Dynamics</a></span>
 
 <br />
-<span class="authors">S. Ismail*,  A. Arbues*,  R. Cotterell,  R. Zurbrügg, C. Amo Alonso</span><br />
+<span class="authors">J. Sieber, M. N. Zeilinger, A. Orvieto, C. Amo Alonso</span><br />
 
-    <span class="journal">International Conference on Intelligent Robots and Systems (IROS),</span>
+    <span class="journal">Submitted to International Conference on Learning Representations (ICLR),</span>
 
-<span class="date">2024.</span>
+<span class="date">2026.</span>
+
 
 
 <!--
@@ -101,7 +90,7 @@ For a comprehensive list of publications and corresponding citations, visit my <
 </nobr>
 
 <p class="abstract-info minimize" id="abstract-info-1" style="display: none;">
-    The impressive capabilities of Large Language Models (LLMs) have led to various efforts to enable robots to be controlled through natural language instructions, opening exciting possibilities for human-robot interaction The goal is for the motor-control task to be performed accurately, efficiently and safely while also enjoying the flexibility imparted by LLMs to specify and adjust the task through natural language. In this work, we demonstrate how a careful layering of an LLM in combination with a Model Predictive Control (MPC) formulation allows for accurate and flexible robotic control via natural language while taking into consideration safety constraints. In particular, we rely on the LLM to effectively frame constraints and objective functions as mathematical expressions, which are later used in the motor-control module via MPC. The transparency of the optimization formulation allows for interpretability of the task and enables adjustments through human feedback. We demonstrate the validity of our method through extensive experiments on long-horizon reasoning, contact-rich, and multi-object interaction tasks. Our evaluations show that NARRATE outperforms current existing methods on these benchmarks and effectively transfers to the real world on two different embodiments.
+    
 
 </p>
 
@@ -122,49 +111,45 @@ $(document).ready(function(){
     </p>
 </div>
 
-
-<!-- Control for Language -->
-<h2 style="display: inline-block; margin-top:20px;"> Control for Language: </h2>
-<h3 style="display: inline-block"> Using control theory to enhance language algorithms </h3>
-<!-- Controlled Language Generation -->
-<h3 style="color: inherit"> Controlled language generation </h3>
-<div class="home">
-    
-    
-<div class="publication" id="publication-/publications/2024/05/01/LiSeCo">
+<div class="publication" id="publication-/publications/2025/03/01/FM-CDC">
     <p>
-     <span class="title"><a href="https://arxiv.org/abs/2405.15454">Linearly Controlled Language Generation with Performative Guarantees</a></span>
+     <span class="title"><a href="https://arxiv.org/abs/2403.16899">State Space Models as Foundation Models: A Control Theoretic Overview</a></span>
+
+    
+        <a style="font-size:14px; color:black;" href="https://github.com/jsie7/ssm-benchmark">[Code]</a>
+    
 
 <br />
-<span class="authors">E. Cheng, M. Baroni, C. Amo Alonso</span><br />
+<span class="authors">C. Amo Alonso*, J. Sieber*, M. N. Zeilinger</span><br />
 
-    <span class="journal">Submitted to International Conference on Learning Representations (ICLR),</span>
+    <span class="journal">American Control Conference (ACC),</span>
 
 <span class="date">2025.</span>
 
 
+
 <!--
 <nobr>
-    <a style="font-size: 14px; color: black;" id="show-abstract-1" href="#">
-        <span id="abstract-icon-1" class="ui-icon ui-icon-plus"></span>
+    <a style="font-size: 14px; color: black;" id="show-abstract-2" href="#">
+        <span id="abstract-icon-2" class="ui-icon ui-icon-plus"></span>
         [Click here to read the abstract]
     </a>
 </nobr>
 
-<p class="abstract-info minimize" id="abstract-info-1" style="display: none;">
-    The increasing prevalence of Large Language Models (LMs) in critical applications highlights the need for controlled language generation strategies that are not only computationally efficient but that also enjoy performance guarantees. To achieve this, we use a common model of concept semantics as linearly represented in an LM’s latent space. In particular, we take the view that natural language generation traces a trajectory in this continuous semantic space, realized by the language model’s hidden activations. This view permits a control-theoretic treatment of text generation in latent space, in which we propose a lightweight, gradient-free intervention that dynamically steers trajectories away from regions corresponding to undesired meanings. Crucially, we show that this intervention, which we compute in closed form, is guaranteed (in probability) to steer the output into the allowed region. Finally, we demonstrate on a toxicity avoidance objective that the intervention steers language away from undesired content while maintaining text quality.
+<p class="abstract-info minimize" id="abstract-info-2" style="display: none;">
+    In recent years, there has been a growing interest in integrating linear state-space models (SSM) in deep neural network architectures of foundation models. This is exemplified by the recent success of Mamba, showing better performance than the state-of-the-art Transformer architectures in language tasks. Foundation models, like e.g. GPT-4, aim to encode sequential data into a latent space in order to learn a compressed representation of the data. The same goal has been pursued by control theorists using SSMs to efficiently model dynamical systems. Therefore, SSMs can be naturally connected to deep sequence modeling, offering the opportunity to create synergies between the corresponding research areas. This paper is intended as a gentle introduction to SSM-based architectures for control theorists and summarizes the latest research developments. It provides a systematic review of the most successful SSM proposals and highlights their main features from a control theoretic perspective. Additionally, we present a comparative analysis of these models, evaluating their performance on a standardized benchmark designed for assessing a model’s efficiency at learning long sequences.
 
 </p>
 
 <script>
 $(document).ready(function(){
-    $("#abstract-info-1").hide();
-    $("#show-abstract-1").click(function(e){
+    $("#abstract-info-2").hide();
+    $("#show-abstract-2").click(function(e){
         e.preventDefault();
-        var icon = $("#abstract-icon-1");
+        var icon = $("#abstract-icon-2");
         icon.toggleClass("ui-icon-plus");
         icon.toggleClass("ui-icon-minus");
-        $("#abstract-info-1").toggle();
+        $("#abstract-info-2").toggle();
     });
 });
 </script>
@@ -173,8 +158,53 @@ $(document).ready(function(){
     </p>
 </div>
 
-<!-- Foundation Models -->
-<h3 style="margin-top:10px;  color: inherit"> Foundation models </h3>
+<div class="publication" id="publication-/publications/2024/05/01/DSF">
+    <p>
+     <span class="title"><a href="https://arxiv.org/abs/2405.15731">Understanding the differences in Foundation Models: Attention, SSMs, and RNNs</a></span>
+
+<br />
+<span class="authors">J. Sieber*, C. Amo Alonso*, A. Didier, M. N. Zeilinger, A. Orvieto</span><br />
+
+    <span class="journal">Conference on Neural Information Processing Systems (NeurIPS),</span>
+
+<span class="date">2024.</span>
+
+
+
+<!--
+<nobr>
+    <a style="font-size: 14px; color: black;" id="show-abstract-3" href="#">
+        <span id="abstract-icon-3" class="ui-icon ui-icon-plus"></span>
+        [Click here to read the abstract]
+    </a>
+</nobr>
+
+<p class="abstract-info minimize" id="abstract-info-3" style="display: none;">
+    Softmax attention is the principle backbone of foundation models for various artificial intelligence applications, yet its quadratic complexity in sequence length can limit its inference throughput in long-context settings. To address this challenge, alternative architectures such as linear attention, State Space Models (SSMs), and Recurrent Neural Networks (RNNs) have been considered as more efficient alternatives. While connections between these approaches exist, such models are commonly developed in isolation and there is a lack of theoretical understanding of the shared principles underpinning these architectures and their subtle differences, greatly influencing performance and scalability. In this paper, we introduce the Dynamical Systems Framework (DSF), which allows a principled investigation of all these architectures in a common representation. Our framework facilitates rigorous comparisons, providing new insights on the distinctive characteristics of each model class. For instance, we compare linear attention and selective SSMs, detailing their differences and conditions under which both are equivalent. We also provide principled comparisons between softmax attention and other model classes, discussing the theoretical conditions under which softmax attention can be approximated. Additionally, we substantiate these new insights with empirical validations and mathematical arguments. This shows the DSF’s potential to guide the systematic development of future more efficient and scalable foundation models.
+
+</p>
+
+<script>
+$(document).ready(function(){
+    $("#abstract-info-3").hide();
+    $("#show-abstract-3").click(function(e){
+        e.preventDefault();
+        var icon = $("#abstract-icon-3");
+        icon.toggleClass("ui-icon-plus");
+        icon.toggleClass("ui-icon-minus");
+        $("#abstract-info-3").toggle();
+    });
+});
+</script>
+-->
+
+    </p>
+</div>
+
+</div>
+
+<!-- Surrounding Components -->
+<h3 style="margin-top:10px; color: #8176A9;"> Surrounding Components </h3>
 <div class="home">
     
     
@@ -185,9 +215,10 @@ $(document).ready(function(){
 <br />
 <span class="authors">F. A. Joseph, J. Sieber, M. N. Zeilinger, C. Amo Alonso</span><br />
 
-    <span class="journal">Submitted to International Conference on Learning Representations (ICLR),</span>
+    <span class="journal">International Conference on Learning Representations (ICLR),</span>
 
 <span class="date">2025.</span>
+
 
 
 <!--
@@ -220,16 +251,179 @@ $(document).ready(function(){
     </p>
 </div>
 
-<div class="publication" id="publication-/publications/2024/05/01/DSF">
+    <p><em>Paper on layer norm coming soon!</em></p>
+</div>
+
+<!-- Single Layer -->
+<h3 style="margin-top:10px; color: #D8875A;"> Single Layer </h3>
+<div class="home">
+    
+    
+<div class="publication" id="publication-/publications/2024/05/01/LiSeCo">
     <p>
-     <span class="title"><a href="https://arxiv.org/abs/2405.15731">Understanding the differences in Foundation Models: Attention, SSMs, and RNNs</a></span>
+     <span class="title"><a href="https://arxiv.org/abs/2405.15454">Linearly Controlled Language Generation with Performative Guarantees</a></span>
+
+    
+        <a style="font-size:14px; color:black;" href="https://github.com/chengemily1/llm-control">[Code]</a>
+    
 
 <br />
-<span class="authors">J. Sieber*, C. Amo Alonso*, A. Didier, M. N. Zeilinger, A. Orvieto</span><br />
+<span class="authors">E. Cheng, C. Amo Alonso</span><br />
 
-    <span class="journal">Accepted to Conference on Neural Information Processing Systems (NeurIPS),</span>
+    <span class="journal">Submitted to Transactions on Machine Learning Research (TMLR),</span>
 
-<span class="date">2024.</span>
+<span class="date">2025.</span>
+
+
+
+<!--
+<nobr>
+    <a style="font-size: 14px; color: black;" id="show-abstract-1" href="#">
+        <span id="abstract-icon-1" class="ui-icon ui-icon-plus"></span>
+        [Click here to read the abstract]
+    </a>
+</nobr>
+
+<p class="abstract-info minimize" id="abstract-info-1" style="display: none;">
+    The increasing prevalence of Large Language Models (LMs) in critical applications highlights the need for controlled language generation strategies that are not only computationally efficient but that also enjoy performance guarantees. To achieve this, we use a common model of concept semantics as linearly represented in an LM’s latent space. In particular, we take the view that natural language generation traces a trajectory in this continuous semantic space, realized by the language model’s hidden activations. This view permits a control-theoretic treatment of text generation in latent space, in which we propose a lightweight, gradient-free intervention that dynamically steers trajectories away from regions corresponding to undesired meanings. Crucially, we show that this intervention, which we compute in closed form, is guaranteed (in probability) to steer the output into the allowed region. Finally, we demonstrate on a toxicity avoidance objective that the intervention steers language away from undesired content while maintaining text quality.
+
+</p>
+
+<script>
+$(document).ready(function(){
+    $("#abstract-info-1").hide();
+    $("#show-abstract-1").click(function(e){
+        e.preventDefault();
+        var icon = $("#abstract-icon-1");
+        icon.toggleClass("ui-icon-plus");
+        icon.toggleClass("ui-icon-minus");
+        $("#abstract-info-1").toggle();
+    });
+});
+</script>
+-->
+
+    </p>
+</div>
+
+
+<!-- Deep AI Architecture -->
+<h3 style="margin-top:10px; color: #5580A3;"> Deep AI Architecture </h3>
+<div class="home publication-section deep-ai-architecture">
+    
+    
+<div class="publication" id="publication-/publications/2025/09/01/controllability-toolkit">
+    <p>
+     <span class="title"><a href="">A Formal Controllability Toolkit for Black-Box Generative Models</a></span>
+
+<br />
+<span class="authors">E. Cheng, C. Amo Alonso, F. Danieli, A. Blaas, L. Zappella, P. Rodríguez, X. Suau</span><br />
+
+    <span class="journal">Submitted to International Conference on Learning Representations (ICLR),</span>
+
+<span class="date">2026.</span>
+
+    <span class="remark">(preprint coming soon!)</span>
+
+
+
+<!--
+<nobr>
+    <a style="font-size: 14px; color: black;" id="show-abstract-1" href="#">
+        <span id="abstract-icon-1" class="ui-icon ui-icon-plus"></span>
+        [Click here to read the abstract]
+    </a>
+</nobr>
+
+<p class="abstract-info minimize" id="abstract-info-1" style="display: none;">
+    
+
+</p>
+
+<script>
+$(document).ready(function(){
+    $("#abstract-info-1").hide();
+    $("#show-abstract-1").click(function(e){
+        e.preventDefault();
+        var icon = $("#abstract-icon-1");
+        icon.toggleClass("ui-icon-plus");
+        icon.toggleClass("ui-icon-minus");
+        $("#abstract-info-1").toggle();
+    });
+});
+</script>
+-->
+
+    </p>
+</div>
+
+</div>
+
+<!-- AI Systems -->
+<h3 style="margin-top:10px; color: #B54950;"> AI Systems </h3>
+<div class="home publication-section ai-systems">
+    
+    
+<div class="publication" id="publication-/publications/2025/10/01/social-recommender">
+    <p>
+     <span class="title"><a href="">Socially-Aware Recommender Systems Mitigate Opinion Clusterization</a></span>
+
+<br />
+<span class="authors">L. Schuepp, C. Amo Alonso, F. Dorfler, G. De Pasquale</span><br />
+
+    <span class="journal">Submitted to International Conference on Learning Representations (ICLR),</span>
+
+<span class="date">2026.</span>
+
+    <span class="remark">(preprint coming soon!)</span>
+
+
+
+<!--
+<nobr>
+    <a style="font-size: 14px; color: black;" id="show-abstract-1" href="#">
+        <span id="abstract-icon-1" class="ui-icon ui-icon-plus"></span>
+        [Click here to read the abstract]
+    </a>
+</nobr>
+
+<p class="abstract-info minimize" id="abstract-info-1" style="display: none;">
+    
+
+</p>
+
+<script>
+$(document).ready(function(){
+    $("#abstract-info-1").hide();
+    $("#show-abstract-1").click(function(e){
+        e.preventDefault();
+        var icon = $("#abstract-icon-1");
+        icon.toggleClass("ui-icon-plus");
+        icon.toggleClass("ui-icon-minus");
+        $("#abstract-info-1").toggle();
+    });
+});
+</script>
+-->
+
+    </p>
+</div>
+
+<div class="publication" id="publication-/publications/2025/07/25/demonstrate">
+    <p>
+     <span class="title"><a href="https://arxiv.org/pdf/2507.12855">DEMONSTRATE: Zero-shot Language to Robotic Control via Multi-task Demonstration Learning</a></span>
+
+    
+        <a style="font-size:14px; color:black;" href="https://demonstrate-mpc.github.io">[Website]</a>
+    
+
+<br />
+<span class="authors">R. Rickenbach, B. Lee, R. Zurbrügg, C. Amo Alonso, M. N. Zeilinger</span><br />
+
+    <span class="journal">Submitted to IEEE Robotics and Automation Letters (RAL),</span>
+
+<span class="date">2025.</span>
+
 
 
 <!--
@@ -241,7 +435,7 @@ $(document).ready(function(){
 </nobr>
 
 <p class="abstract-info minimize" id="abstract-info-2" style="display: none;">
-    Softmax attention is the principle backbone of foundation models for various artificial intelligence applications, yet its quadratic complexity in sequence length can limit its inference throughput in long-context settings. To address this challenge, alternative architectures such as linear attention, State Space Models (SSMs), and Recurrent Neural Networks (RNNs) have been considered as more efficient alternatives. While connections between these approaches exist, such models are commonly developed in isolation and there is a lack of theoretical understanding of the shared principles underpinning these architectures and their subtle differences, greatly influencing performance and scalability. In this paper, we introduce the Dynamical Systems Framework (DSF), which allows a principled investigation of all these architectures in a common representation. Our framework facilitates rigorous comparisons, providing new insights on the distinctive characteristics of each model class. For instance, we compare linear attention and selective SSMs, detailing their differences and conditions under which both are equivalent. We also provide principled comparisons between softmax attention and other model classes, discussing the theoretical conditions under which softmax attention can be approximated. Additionally, we substantiate these new insights with empirical validations and mathematical arguments. This shows the DSF’s potential to guide the systematic development of future more efficient and scalable foundation models.
+    
 
 </p>
 
@@ -262,20 +456,17 @@ $(document).ready(function(){
     </p>
 </div>
 
-<div class="publication" id="publication-/publications/2024/03/01/FM-CDC">
+<div class="publication" id="publication-/publications/2025/05/01/neuroscience-ai">
     <p>
-     <span class="title"><a href="https://arxiv.org/abs/2403.16899">State Space Models as Foundation Models: A Control Theoretic Overview</a></span>
-
-    
-        <a style="font-size:14px; color:black;" href="https://github.com/jsie7/ssm-benchmark">[Code]</a>
-    
+     <span class="title"><a href="https://arxiv.org/pdf/2507.05238">Bridging Expressivity and Scalability with Adaptive Unitary SSMs</a></span>
 
 <br />
-<span class="authors">C. Amo Alonso*, J. Sieber*, M. N. Zeilinger</span><br />
+<span class="authors">A. Karuvally, F. Nowak, A. T. Keller, C. Amo Alonso, T. J. Sejnowski, H. T. Siegelmann</span><br />
 
-    <span class="journal">Submitted to the American Control Conference (ACC),</span>
+    <span class="journal">Neural Information Processing Systems (NeurIPS),</span>
 
 <span class="date">2025.</span>
+
 
 
 <!--
@@ -287,7 +478,7 @@ $(document).ready(function(){
 </nobr>
 
 <p class="abstract-info minimize" id="abstract-info-3" style="display: none;">
-    In recent years, there has been a growing interest in integrating linear state-space models (SSM) in deep neural network architectures of foundation models. This is exemplified by the recent success of Mamba, showing better performance than the state-of-the-art Transformer architectures in language tasks. Foundation models, like e.g. GPT-4, aim to encode sequential data into a latent space in order to learn a compressed representation of the data. The same goal has been pursued by control theorists using SSMs to efficiently model dynamical systems. Therefore, SSMs can be naturally connected to deep sequence modeling, offering the opportunity to create synergies between the corresponding research areas. This paper is intended as a gentle introduction to SSM-based architectures for control theorists and summarizes the latest research developments. It provides a systematic review of the most successful SSM proposals and highlights their main features from a control theoretic perspective. Additionally, we present a comparative analysis of these models, evaluating their performance on a standardized benchmark designed for assessing a model’s efficiency at learning long sequences.
+    
 
 </p>
 
@@ -308,14 +499,117 @@ $(document).ready(function(){
     </p>
 </div>
 
+<div class="publication" id="publication-/publications/2024/02/01/NARRATE">
+    <p>
+     <span class="title"><a href="https://arxiv.org/abs/2403.10762">NARRATE: Versatile Language Architecture for Optimal Control in Robotics</a></span>
 
-<!-- Optimal Control -->
+    
+        <a style="font-size:14px; color:black;" href="https://narrate-mpc.github.io">[Website]</a>
+    
+
+    
+        <a style="font-size:14px; color:black;" href="https://github.com/vateseif/narrate">[Code]</a>
+    
+
+    
+        <a style="font-size:14px; color:black;" href="https://www.youtube.com/watch?v=8__CQMCkdws">[Video]</a>
+    
+
+<br />
+<span class="authors">S. Ismail*,  A. Arbues*,  R. Cotterell,  R. Zurbrügg, C. Amo Alonso</span><br />
+
+    <span class="journal">International Conference on Intelligent Robots and Systems (IROS),</span>
+
+<span class="date">2024.</span>
+
+
+
+<!--
+<nobr>
+    <a style="font-size: 14px; color: black;" id="show-abstract-4" href="#">
+        <span id="abstract-icon-4" class="ui-icon ui-icon-plus"></span>
+        [Click here to read the abstract]
+    </a>
+</nobr>
+
+<p class="abstract-info minimize" id="abstract-info-4" style="display: none;">
+    The impressive capabilities of Large Language Models (LLMs) have led to various efforts to enable robots to be controlled through natural language instructions, opening exciting possibilities for human-robot interaction The goal is for the motor-control task to be performed accurately, efficiently and safely while also enjoying the flexibility imparted by LLMs to specify and adjust the task through natural language. In this work, we demonstrate how a careful layering of an LLM in combination with a Model Predictive Control (MPC) formulation allows for accurate and flexible robotic control via natural language while taking into consideration safety constraints. In particular, we rely on the LLM to effectively frame constraints and objective functions as mathematical expressions, which are later used in the motor-control module via MPC. The transparency of the optimization formulation allows for interpretability of the task and enables adjustments through human feedback. We demonstrate the validity of our method through extensive experiments on long-horizon reasoning, contact-rich, and multi-object interaction tasks. Our evaluations show that NARRATE outperforms current existing methods on these benchmarks and effectively transfers to the real world on two different embodiments.
+
+</p>
+
+<script>
+$(document).ready(function(){
+    $("#abstract-info-4").hide();
+    $("#show-abstract-4").click(function(e){
+        e.preventDefault();
+        var icon = $("#abstract-icon-4");
+        icon.toggleClass("ui-icon-plus");
+        icon.toggleClass("ui-icon-minus");
+        $("#abstract-info-4").toggle();
+    });
+});
+</script>
+-->
+
+    </p>
+</div>
+
+</div>
+
+<!-- Distributed Optimal Control -->
 <h2 style="margin-top:30px;"> Distributed Optimal Control </h2>
 <!-- DLMPC -->
 <h3 style="margin-top:10px;  color: inherit"> Distributed and Localized Model Predictive Control </h3>
 <div class="home">
     
     
+<div class="publication" id="publication-/publications/2025/03/31/affineSLS">
+    <p>
+    <span class="title"><a href="">System Level Synthesis for Affine Control Policies: Model Based and Data-Driven Settings</a></span>
+
+    
+        <a style="font-size:14px; color:black;" href="https://github.com/lukaschu/SLS-for-Affine-Policies">[Code]</a>
+    
+
+<br />
+<span class="authors">L. Schuepp, Giulia De Pasquale, Florian Dorfler and C. Amo Alonso</span><br />
+
+    <span class="journal">IEEE Conference on Decision and Control (CDC),</span>
+
+<span class="date">2025.</span>
+
+
+
+<!--
+<nobr>
+    <a style="font-size: 14px; color: black;" id="show-abstract-1" href="#">
+        <span id="abstract-icon-1" class="ui-icon ui-icon-plus"></span>
+        [Click here to read the abstract]
+    </a>
+</nobr>
+
+<p class="abstract-info minimize" id="abstract-info-1" style="display: none;">
+    There is an increasing need for effective control of systems with complex dynamics, particularly through data-driven approaches. System Level Synthesis (SLS) has emerged as a powerful framework that facilitates the control of large-scale systems while accounting for model uncertainties. SLS approaches are currently limited to linear systems and time-varying linear control policies, thus limiting the class of achievable control strategies. We introduce a novel closed-loop parameterization for time-varying affine control policies, extending the SLS framework to a broader class of systems and policies. We show that the closed-loop behavior under affine policies can be equivalently characterized using past system trajectories, enabling a fully data-driven formulation. This parameterization seamlessly integrates affine policies into optimal control problems, allowing for a closed-loop formulation of general Model Predictive Control (MPC) problems. To the best of our knowledge, this is the first work to extend SLS to affine policies in both model-based and data-driven settings, enabling an equivalent formulation of MPC problems using closed-loop maps. We validate our approach through numerical experiments, demonstrating that our model-based and data-driven affine SLS formulations achieve performance on par with traditional model-based MPC.
+
+</p>
+
+<script>
+$(document).ready(function(){
+    $("#abstract-info-1").hide();
+    $("#show-abstract-1").click(function(e){
+        e.preventDefault();
+        var icon = $("#abstract-icon-1");
+        icon.toggleClass("ui-icon-plus");
+        icon.toggleClass("ui-icon-minus");
+        $("#abstract-info-1").toggle();
+    });
+});
+</script>
+-->
+
+    </p>
+</div>
+
 <div class="publication" id="publication-/publications/2023/06/01/DLMPC-thesis">
     <p>
     <span class="title"><a href="https://thesis.library.caltech.edu/15262/">Distributed and Localized Model Predictive Control</a></span>
@@ -336,28 +630,29 @@ $(document).ready(function(){
 <span class="date">2023.</span>
 
 
+
 <!--
 <nobr>
-    <a style="font-size: 14px; color: black;" id="show-abstract-1" href="#">
-        <span id="abstract-icon-1" class="ui-icon ui-icon-plus"></span>
+    <a style="font-size: 14px; color: black;" id="show-abstract-2" href="#">
+        <span id="abstract-icon-2" class="ui-icon ui-icon-plus"></span>
         [Click here to read the abstract]
     </a>
 </nobr>
 
-<p class="abstract-info minimize" id="abstract-info-1" style="display: none;">
+<p class="abstract-info minimize" id="abstract-info-2" style="display: none;">
     The increasing presence of large-scale distributed systems highlights the need for scalable control strategies where only local communication is required. Moreover, in safety-critical systems it is imperative that such control strategies handle constraints in the presence of disturbances and enjoy theoretical and performance guarantees. In response to this need, we present the Distributed and Localized Model Predictive Control (DLMPC) algorithm for large-scale linear systems. DLMPC is a distributed closed-loop model predictive control (MPC) scheme wherein only local state and model information needs to be exchanged between subsystems for the computation and implementation of control actions. The resulting distributed algorithms tackle various types of additive disturbances and enjoy recursive feasibility and asymptotic stability guarantees that introduce minimal conservatism and can be computed in an offline fashion without adding to the computational burden. We also provide analysis and guarantees on the global performance of DLMPC, and demonstrate that in cases where the underlying topology of the system is sparse (as is the case in most large-scale networks), the inclusion of local communication constraints does not result in a suboptimal solution. Moreover, we show that when no noise is present, this algorithm can be extended to the purely data-driven case where all previous guarantees hold and the need for a model is fully replaced by past-trajectory data. We show that the amount of data needed for our synthesis problem is independent of the size of the global system. Lastly, we explore the potential of DLMPC for hardware accelerated implementation in GPU by exploiting the fact that the structure of the DLMPC problem captures some of the limitations of GPU computations. In all algorithmic and theoretical results presented in this thesis, only local information exchange is necessary, and computational complexity is independent of the global system size. DLMPC is the first MPC algorithm that allows for the scalable, efficient and data-driven computation and implementation of distributed closed-loop control policies and enjoys theoretical guarantees.
 
 </p>
 
 <script>
 $(document).ready(function(){
-    $("#abstract-info-1").hide();
-    $("#show-abstract-1").click(function(e){
+    $("#abstract-info-2").hide();
+    $("#show-abstract-2").click(function(e){
         e.preventDefault();
-        var icon = $("#abstract-icon-1");
+        var icon = $("#abstract-icon-2");
         icon.toggleClass("ui-icon-plus");
         icon.toggleClass("ui-icon-minus");
-        $("#abstract-info-1").toggle();
+        $("#abstract-info-2").toggle();
     });
 });
 </script>
@@ -386,28 +681,29 @@ $(document).ready(function(){
 <span class="date">2023.</span>
 
 
+
 <!--
 <nobr>
-    <a style="font-size: 14px; color: black;" id="show-abstract-2" href="#">
-        <span id="abstract-icon-2" class="ui-icon ui-icon-plus"></span>
+    <a style="font-size: 14px; color: black;" id="show-abstract-3" href="#">
+        <span id="abstract-icon-3" class="ui-icon ui-icon-plus"></span>
         [Click here to read the abstract]
     </a>
 </nobr>
 
-<p class="abstract-info minimize" id="abstract-info-2" style="display: none;">
+<p class="abstract-info minimize" id="abstract-info-3" style="display: none;">
     Recent advances in model predictive control (MPC) leverage local communication constraints to produce localized MPC algorithms whose complexities scale independently of total network size. However, no characterization is available regarding global performance, i.e. whether localized MPC (with communication constraints) performs just as well as global MPC (no communication constraints). In this paper, we provide analysis and guarantees on global performance of localized MPC – in particular, we derive sufficient conditions for optimal global performance in the presence of local communication constraints. We also present an algorithm to determine the communication structure for a given system that will preserve performance while minimizing computational complexity. The effectiveness of the algorithm is verified in simulations, and additional relationships between network properties and performance-preserving communication constraints are characterized. A striking finding is that in a network of 121 coupled pendula, each node only needs to communicate with its immediate neighbors to preserve optimal global performance. Overall, this work offers theoretical understanding on the effect of local communication on global performance, and provides practitioners with the tools necessary to deploy localized model predictive control by establishing a rigorous method of selecting local communication constraints. This work also demonstrates – surprisingly – that the inclusion of severe communication constraints need not compromise global performance.
 
 </p>
 
 <script>
 $(document).ready(function(){
-    $("#abstract-info-2").hide();
-    $("#show-abstract-2").click(function(e){
+    $("#abstract-info-3").hide();
+    $("#show-abstract-3").click(function(e){
         e.preventDefault();
-        var icon = $("#abstract-icon-2");
+        var icon = $("#abstract-icon-3");
         icon.toggleClass("ui-icon-plus");
         icon.toggleClass("ui-icon-minus");
-        $("#abstract-info-2").toggle();
+        $("#abstract-info-3").toggle();
     });
 });
 </script>
@@ -435,31 +731,32 @@ $(document).ready(function(){
 
 <span class="date">2023.</span>
 
+
     <br /><span style="font-weight: 600;">Best Paper Award</span>
 
 
 <!--
 <nobr>
-    <a style="font-size: 14px; color: black;" id="show-abstract-3" href="#">
-        <span id="abstract-icon-3" class="ui-icon ui-icon-plus"></span>
+    <a style="font-size: 14px; color: black;" id="show-abstract-4" href="#">
+        <span id="abstract-icon-4" class="ui-icon ui-icon-plus"></span>
         [Click here to read the abstract]
     </a>
 </nobr>
 
-<p class="abstract-info minimize" id="abstract-info-3" style="display: none;">
+<p class="abstract-info minimize" id="abstract-info-4" style="display: none;">
     Engineered cyberphysical systems are growing increasingly large and complex. These systems require scalable controllers that robustly satisfy state and input constraints in the presence of additive noise – such controllers should also be accompanied by theoretical guarantees on feasibility and stability. In our companion paper, we introduced Distributed and Localized Model Predictive Control (DLMPC) for large-scale linear systems; DLMPC is a scalable closed-loop MPC scheme in which subsystems need only exchange local information in order to synthesize and implement local controllers. In this paper, we provide recursive feasibility and asymptotic stability guarantees for DLMPC. We leverage the System Level Synthesis framework to express the maximal positive robust invariant set for the closed-loop system and its corresponding Lyapunov function, both in terms of the closed-loop system responses. We use the invariant set as the terminal set for DLMPC, and show that this guarantees feasibility with minimal conservatism. We use the Lyapunov function as the terminal cost, and show that this guarantees stability. We provide fully distributed and localized algorithms to compute the terminal set offline, and also provide necessary additions to the online DLMPC algorithm to accommodate coupled terminal constraint and cost. In all algorithms, only local information exchanges are necessary, and computational complexity is independent of the global system size – we demonstrate this analytically and experimentally. This is the first distributed MPC approach that provides minimally conservative yet fully distributed guarantees for recursive feasibility and asymptotic stability, for both nominal and robust settings.
 
 </p>
 
 <script>
 $(document).ready(function(){
-    $("#abstract-info-3").hide();
-    $("#show-abstract-3").click(function(e){
+    $("#abstract-info-4").hide();
+    $("#show-abstract-4").click(function(e){
         e.preventDefault();
-        var icon = $("#abstract-icon-3");
+        var icon = $("#abstract-icon-4");
         icon.toggleClass("ui-icon-plus");
         icon.toggleClass("ui-icon-minus");
-        $("#abstract-info-3").toggle();
+        $("#abstract-info-4").toggle();
     });
 });
 </script>
@@ -488,28 +785,29 @@ $(document).ready(function(){
 <span class="date">2023.</span>
 
 
+
 <!--
 <nobr>
-    <a style="font-size: 14px; color: black;" id="show-abstract-4" href="#">
-        <span id="abstract-icon-4" class="ui-icon ui-icon-plus"></span>
+    <a style="font-size: 14px; color: black;" id="show-abstract-5" href="#">
+        <span id="abstract-icon-5" class="ui-icon ui-icon-plus"></span>
         [Click here to read the abstract]
     </a>
 </nobr>
 
-<p class="abstract-info minimize" id="abstract-info-4" style="display: none;">
+<p class="abstract-info minimize" id="abstract-info-5" style="display: none;">
     The increasing presence of large-scale distributed systems highlights the need for scalable control strategies where only local communication is required. Moreover, in safety-critical systems it is imperative that such control strategies handle constraints in the presence of disturbances. In response to this need, we present the Distributed and Localized Model Predictive Control (DLMPC) algorithm for large-scale linear systems. DLMPC is a distributed closed-loop model predictive control (MPC) scheme wherein only local state and model information needs to be exchanged between subsystems for the computation and implementation of control actions. We use the System Level Synthesis (SLS) framework to reformulate the centralized MPC problem, and show that this allows us to naturally impose localized communication constraints between sub-controllers. The structure of the resulting problem can be exploited to develop an Alternating Direction Method of Multipliers (ADMM) based algorithm that allows for distributed and localized computation of closed-loop control policies. We demonstrate that computational complexity of the subproblems solved by each subsystem in DLMPC is independent of the size of the global system. To the best of our knowledge, DLMPC is the first MPC algorithm that allows for the scalable distributed computation as well as implementation of distributed closed-loop control policies, and seemingly deals with additive disturbances. In our companion paper, we show that this approach enjoys recursive feasibility and asymptotic stability.
 
 </p>
 
 <script>
 $(document).ready(function(){
-    $("#abstract-info-4").hide();
-    $("#show-abstract-4").click(function(e){
+    $("#abstract-info-5").hide();
+    $("#show-abstract-5").click(function(e){
         e.preventDefault();
-        var icon = $("#abstract-icon-4");
+        var icon = $("#abstract-icon-5");
         icon.toggleClass("ui-icon-plus");
         icon.toggleClass("ui-icon-minus");
-        $("#abstract-info-4").toggle();
+        $("#abstract-info-5").toggle();
     });
 });
 </script>
@@ -537,31 +835,32 @@ $(document).ready(function(){
 
 <span class="date">2022.</span>
 
+
     <br /><span style="font-weight: 600;">Best Student Paper Award</span>
 
 
 <!--
 <nobr>
-    <a style="font-size: 14px; color: black;" id="show-abstract-5" href="#">
-        <span id="abstract-icon-5" class="ui-icon ui-icon-plus"></span>
+    <a style="font-size: 14px; color: black;" id="show-abstract-6" href="#">
+        <span id="abstract-icon-6" class="ui-icon ui-icon-plus"></span>
         [Click here to read the abstract]
     </a>
 </nobr>
 
-<p class="abstract-info minimize" id="abstract-info-5" style="display: none;">
+<p class="abstract-info minimize" id="abstract-info-6" style="display: none;">
     To effectively control large-scale distributed systems online, model predictive control (MPC) has to swiftly solve the underlying high-dimensional optimization. There are multiple techniques applied to accelerate the solving process in the literature, mainly attributed to software-based algorithmic advancements and hardware-assisted computation enhancements. However, those methods focus on arithmetic accelerations and overlook the benefits of the underlying system’s structure. In particular, the existing decoupled software-hardware algorithm design that naively parallelizes the arithmetic operations by the hardware does not tackle the hardware overheads such as CPU-GPU and thread-to-thread communications in a principled manner. Also, the advantages of parallelizable subproblem decomposition in distributed MPC are not well recognized and exploited. As a result, we have not reached the full potential of hardware acceleration for MPC. In this paper, we explore those opportunities by leveraging GPU to parallelize the distributed and localized MPC (DLMPC) algorithm. We exploit the locality constraints embedded in the DLMPC formulation to reduce the hardware-intrinsic communication overheads. Our parallel implementation achieves up to 50x faster runtime than its CPU counterparts under various parameters. Furthermore, we find that the locality-aware GPU parallelization could halve the optimization runtime comparing to the naive acceleration. Overall, our results demonstrate the performance gains brought by software-hardware co-design with the information exchange structure in mind.
 
 </p>
 
 <script>
 $(document).ready(function(){
-    $("#abstract-info-5").hide();
-    $("#show-abstract-5").click(function(e){
+    $("#abstract-info-6").hide();
+    $("#show-abstract-6").click(function(e){
         e.preventDefault();
-        var icon = $("#abstract-icon-5");
+        var icon = $("#abstract-icon-6");
         icon.toggleClass("ui-icon-plus");
         icon.toggleClass("ui-icon-minus");
-        $("#abstract-info-5").toggle();
+        $("#abstract-info-6").toggle();
     });
 });
 </script>
@@ -590,28 +889,29 @@ $(document).ready(function(){
 <span class="date">2022.</span>
 
 
+
 <!--
 <nobr>
-    <a style="font-size: 14px; color: black;" id="show-abstract-6" href="#">
-        <span id="abstract-icon-6" class="ui-icon ui-icon-plus"></span>
+    <a style="font-size: 14px; color: black;" id="show-abstract-7" href="#">
+        <span id="abstract-icon-7" class="ui-icon ui-icon-plus"></span>
         [Click here to read the abstract]
     </a>
 </nobr>
 
-<p class="abstract-info minimize" id="abstract-info-6" style="display: none;">
+<p class="abstract-info minimize" id="abstract-info-7" style="display: none;">
     Motivated by large-scale but computationally constrained settings, e.g., the Internet of Things, we present a novel data-driven distributed control algorithm that is synthesized directly from trajectory data. Our method, data-driven Distributed and Localized Model Predictive Control (D3LMPC), builds upon the data-driven System Level Synthesis (SLS) framework, which allows one to parameterize \emph{closed-loop} system responses directly from collected open-loop trajectories. The resulting model-predictive controller can be implemented with distributed computation and only local information sharing. By imposing locality constraints on the system response, we show that the amount of data needed for our synthesis problem is independent of the size of the global system. Moreover, we show that our algorithm enjoys theoretical guarantees for recursive feasibility and asymptotic stability. Finally, we also demonstrate the optimality and scalability of our algorithm in a simulation experiment.
 
 </p>
 
 <script>
 $(document).ready(function(){
-    $("#abstract-info-6").hide();
-    $("#show-abstract-6").click(function(e){
+    $("#abstract-info-7").hide();
+    $("#show-abstract-7").click(function(e){
         e.preventDefault();
-        var icon = $("#abstract-icon-6");
+        var icon = $("#abstract-icon-7");
         icon.toggleClass("ui-icon-plus");
         icon.toggleClass("ui-icon-minus");
-        $("#abstract-info-6").toggle();
+        $("#abstract-info-7").toggle();
     });
 });
 </script>
@@ -632,28 +932,29 @@ $(document).ready(function(){
 <span class="date">2021.</span>
 
 
+
 <!--
 <nobr>
-    <a style="font-size: 14px; color: black;" id="show-abstract-7" href="#">
-        <span id="abstract-icon-7" class="ui-icon ui-icon-plus"></span>
+    <a style="font-size: 14px; color: black;" id="show-abstract-8" href="#">
+        <span id="abstract-icon-8" class="ui-icon ui-icon-plus"></span>
         [Click here to read the abstract]
     </a>
 </nobr>
 
-<p class="abstract-info minimize" id="abstract-info-7" style="display: none;">
+<p class="abstract-info minimize" id="abstract-info-8" style="display: none;">
     The System Level Synthesis (SLS) approach facilitates distributed control of large cyberphysical networks in an easy-to-understand, computationally scalable way. We present an overview of the SLS approach and its associated extensions in nonlinear control, MPC, adaptive control, and learning for control. To illustrate the effectiveness of SLS-based methods, we present a case study motivated by the power grid, with communication constraints, actuator saturation, disturbances, and changing setpoints. This simple but challenging case study necessitates the use of model predictive control (MPC); however, standard MPC techniques often scales poorly to large systems and incurs heavy computational burden. To address this challenge, we combine two SLS-based controllers to form a layered MPC-like controller. Our controller has constant computational complexity with respect to the system size, gives a 20-fold reduction in online computation requirements, and still achieves performance that is within 3% of the centralized MPC controller.
 
 </p>
 
 <script>
 $(document).ready(function(){
-    $("#abstract-info-7").hide();
-    $("#show-abstract-7").click(function(e){
+    $("#abstract-info-8").hide();
+    $("#show-abstract-8").click(function(e){
         e.preventDefault();
-        var icon = $("#abstract-icon-7");
+        var icon = $("#abstract-icon-8");
         icon.toggleClass("ui-icon-plus");
         icon.toggleClass("ui-icon-minus");
-        $("#abstract-info-7").toggle();
+        $("#abstract-info-8").toggle();
     });
 });
 </script>
@@ -682,28 +983,29 @@ $(document).ready(function(){
 <span class="date">2020.</span>
 
 
+
 <!--
 <nobr>
-    <a style="font-size: 14px; color: black;" id="show-abstract-8" href="#">
-        <span id="abstract-icon-8" class="ui-icon ui-icon-plus"></span>
+    <a style="font-size: 14px; color: black;" id="show-abstract-9" href="#">
+        <span id="abstract-icon-9" class="ui-icon ui-icon-plus"></span>
         [Click here to read the abstract]
     </a>
 </nobr>
 
-<p class="abstract-info minimize" id="abstract-info-8" style="display: none;">
+<p class="abstract-info minimize" id="abstract-info-9" style="display: none;">
     An explicit Model Predictive Control algorithm for large-scale structured linear systems is presented. We base our results on Distributed and Localized Model Predictive Control (DLMPC), a closed loop model predictive control scheme based on the System Level Synthesis (SLS) framework wherein only local state and model information needs to be exchanged between subsystems for the computation and implementation of control actions. We provide an explicit solution for each of the subproblems resulting from the distributed MPC scheme. We show that given the separability of the problem, the explicit solution is only divided into three regions per state and input instantiation, making the point location problem very efficient. Moreover, given the locality constraints, the subproblems are of much smaller dimension than the full problem, which consequently significantly reduces the computational overhead of explicit solutions. We conclude with numerical simulations to demonstrate the computational advantages of our method, in which we show a large improvement in runtime per MPC iteration as compared with the results of computing the optimization with a solver online.
 
 </p>
 
 <script>
 $(document).ready(function(){
-    $("#abstract-info-8").hide();
-    $("#show-abstract-8").click(function(e){
+    $("#abstract-info-9").hide();
+    $("#show-abstract-9").click(function(e){
         e.preventDefault();
-        var icon = $("#abstract-icon-8");
+        var icon = $("#abstract-icon-9");
         icon.toggleClass("ui-icon-plus");
         icon.toggleClass("ui-icon-minus");
-        $("#abstract-info-8").toggle();
+        $("#abstract-info-9").toggle();
     });
 });
 </script>
@@ -732,28 +1034,29 @@ $(document).ready(function(){
 <span class="date">2020.</span>
 
 
+
 <!--
 <nobr>
-    <a style="font-size: 14px; color: black;" id="show-abstract-9" href="#">
-        <span id="abstract-icon-9" class="ui-icon ui-icon-plus"></span>
+    <a style="font-size: 14px; color: black;" id="show-abstract-10" href="#">
+        <span id="abstract-icon-10" class="ui-icon ui-icon-plus"></span>
         [Click here to read the abstract]
     </a>
 </nobr>
 
-<p class="abstract-info minimize" id="abstract-info-9" style="display: none;">
+<p class="abstract-info minimize" id="abstract-info-10" style="display: none;">
     We present the Distributed and Localized Model Predictive Control (DLMPC) algorithm for large-scale structured linear systems, a distributed closed loop model predictive control scheme wherein only local state and model information needs to be exchanged between subsystems for the computation and implementation of control actions. We use the System Level Synthesis (SLS) framework to reformulate the centralized MPC problem as an optimization problem over closed loop system responses, and show that this allows us to naturally impose localized communication constraints between sub-controllers. We show that the structure of the resulting optimization problem can be exploited to develop an Alternating Direction Method of Multipliers (ADMM) based algorithm that allows for distributed and localized computation of distributed closed loop control policies. We conclude with numerical simulations to demonstrate the usefulness of our method, in which we show that the computational complexity of the subproblems solved by each subsystem in DLMPC is independent of the size of the global system. To the best of our knowledge, DLMPC is the first MPC algorithm that allows for the scalable distributed computation of distributed closed loop control policies.
 
 </p>
 
 <script>
 $(document).ready(function(){
-    $("#abstract-info-9").hide();
-    $("#show-abstract-9").click(function(e){
+    $("#abstract-info-10").hide();
+    $("#show-abstract-10").click(function(e){
         e.preventDefault();
-        var icon = $("#abstract-icon-9");
+        var icon = $("#abstract-icon-10");
         icon.toggleClass("ui-icon-plus");
         icon.toggleClass("ui-icon-minus");
-        $("#abstract-info-9").toggle();
+        $("#abstract-info-10").toggle();
     });
 });
 </script>
@@ -776,6 +1079,7 @@ $(document).ready(function(){
     <span class="journal">IEEE Conference on Decision and Control (CDC),</span>
 
 <span class="date">2020.</span>
+
 
 
 <!--
@@ -824,6 +1128,7 @@ $(document).ready(function(){
 <span class="date">2020.</span>
 
 
+
 <!--
 <nobr>
     <a style="font-size: 14px; color: black;" id="show-abstract-2" href="#">
@@ -866,6 +1171,7 @@ $(document).ready(function(){
 <span class="date">2018.</span>
 
 
+
 <!--
 <nobr>
     <a style="font-size: 14px; color: black;" id="show-abstract-3" href="#">
@@ -897,7 +1203,7 @@ $(document).ready(function(){
 </div>
 
 </div>
-</div></div></div>
+</div>
 
       </div>
     </main><footer class="site-footer h-card">
@@ -924,8 +1230,9 @@ $(document).ready(function(){
 </div>
       
     </div>
-    <p style="text-align: center">
-    Carmen Amo Alonso - 2024
+    <p style="text-align: center; font-size: 0.75em; margin-bottom: 0.25em;">
+    Carmen Amo Alonso - 2025<br>
+    The use of any content on this website for the training of generative models is not authorized without explicit prior consent.
     </p>
 
 </footer>

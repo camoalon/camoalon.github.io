@@ -6,7 +6,7 @@ authors: "L. Schuepp, Giulia De Pasquale, Florian Dorfler and C. Amo Alonso"
 paper-link:
 other-links: 
     - Code: https://github.com/lukaschu/SLS-for-Affine-Policies
-journal: Submitted to IEEE Conference on Decision and Control (CDC)
+journal: IEEE Conference on Decision and Control (CDC)
 type: conference
 remark: 
 topic: dmpc

@@ -5,10 +5,10 @@ status: pb
 authors: "F. A. Joseph, J. Sieber, M. N. Zeilinger, C. Amo Alonso"
 paper-link: https://arxiv.org/abs/2410.10609
 other-links: 
-journal: Submitted to International Conference on Learning Representations (ICLR)
+journal: International Conference on Learning Representations (ICLR)
 type: conference
 remark: 
-topic: foundation
+topic: surrounding
 
 ---
 

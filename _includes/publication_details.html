@@ -10,6 +10,9 @@
     <span class="journal">{{ publication.journal }},</span>
 {% endif %}
 <span class="date">{{ publication.year | date: "%Y" }}.</span>
+{% if publication.remark %}
+    <span class="remark">{{ publication.remark }}</span>
+{% endif %}
 {% if publication.award %}
     <br><span style="font-weight: 600;">{{ publication.award }}</span>
 {% endif %}

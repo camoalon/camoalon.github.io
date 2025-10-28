@@ -1,11 +1,15 @@
 /* General */
 
 a, a:link, a:visited{
-  color: #0b2eae;
+  color: #2c5aa0;
 }
 
 a.site-title, a.site-title:visited, a.site-title:link{
     color: black;
+}
+
+.small-caps {
+    font-variant: small-caps;
 }
 
 /* index */
@@ -37,6 +41,253 @@ a.site-title, a.site-title:visited, a.site-title:link{
     content: "";
     clear: both;
     display: table;
+}
+
+/* Footnotes */
+.footnote-ref {
+    color: #2c5aa0;
+    text-decoration: none;
+    font-size: 0.6em;
+    vertical-align: super;
+    margin-left: 2px;
+}
+
+.footnote-ref-extended {
+    color: #2c5aa0;
+    text-decoration: none;
+    font-size: inherit;
+    vertical-align: baseline;
+    margin-left: 0;
+    position: relative;
+    cursor: help;
+}
+
+.footnote-ref:hover,
+.footnote-ref-extended:hover {
+    text-decoration: underline;
+}
+
+/* Tooltip styles */
+.footnote-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    pointer-events: none;
+    white-space: normal;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border: 1px solid #ddd;
+}
+
+/* Different widths for different footnotes */
+.footnote-tooltip.fn1 {
+    min-width: 320px;
+    max-width: 320px;
+}
+
+.footnote-tooltip.fn2 {
+    min-width: 650px;
+    max-width: 650px;
+}
+
+.footnote-tooltip.fn3 {
+    min-width: 510px;
+    max-width: 510px;
+}
+
+.footnote-tooltip.fn4 {
+    min-width: 260px;
+    max-width: 260px;
+}
+
+.footnote-tooltip.fn5 {
+    min-width: 300px;
+    max-width: 300px;
+}
+
+/* Second paragraph tooltips */
+.footnote-tooltip.fn6 {
+    min-width: 220px;
+    max-width: 220px;
+}
+
+.footnote-tooltip.fn7 {
+    min-width: 370px;
+    max-width: 370px;
+}
+
+.footnote-tooltip.fn8 {
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.footnote-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: #f8f9fa;
+}
+
+.footnote-ref-extended:hover .footnote-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.footnotes {
+    margin-top: 15px;
+    padding-top: 10px;
+    font-size: 0.8em;
+    color: #666;
+    border-top: 1px solid #ddd;
+}
+
+.footnotes ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.footnotes li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.footnotes li p {
+    margin: 0;
+    padding: 0;
+}
+
+.footnote-backref {
+    color: #2c5aa0;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.footnote-backref:hover {
+    text-decoration: underline;
+}
+#recent-news {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#recent-news h2{
+    font-size: 20px;
+    text-transform: none;
+    padding: 3px 7px;
+    margin-bottom: 20px;
+}
+
+#recent-news h3{
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+#news {
+    margin: 0;
+    padding: 0;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    padding: 6px 0;
+    background: #f8f9fa;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.news-date {
+    font-weight: bold;
+    color: #666;
+    min-width: 80px;
+    margin-right: 20px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.news-separator {
+    width: 3px;
+    height: 20px;
+    background-color: #2c5aa0;
+    margin-right: 20px;
+}
+
+.news-content {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.news-content p {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .news-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 15px;
+    }
+    
+    .news-date {
+        margin-right: 0;
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+    
+/* Research page figure styling */
+.research-figure-container {
+    margin-bottom: 20px;
+}
+
+.research-figure-text {
+    text-align: justify;
+}
+
+.research-figure-image {
+    float: right;
+    margin: 0 0 15px 20px;
+    max-width: 180px;
+}
+
+.research-figure-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Clear float after the container */
+.research-figure-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive design for research figure */
+@media only screen and (max-width: 768px) {
+    .research-figure-image {
+        float: none;
+        margin: 15px auto;
+        max-width: 200px;
+        display: block;
+    }
 }
 
 /* Research */
@@ -130,4 +381,29 @@ footer {
     color: #7a7a7a;
     border-color: transparent;
     height: 50px;
+}
+
+/* Custom color for Mixer Block */
+.mixer-block {
+    color: #39653B !important;
+}
+
+/* Custom color for Surrounding Components */
+.surrounding-components {
+    color: #8176A9 !important;
+}
+
+/* Custom color for Single Layer */
+.single-layer {
+    color: #D8875A !important;
+}
+
+/* Custom color for Deep AI Architecture */
+.deep-ai-architecture {
+    color: #5580A3 !important;
+}
+
+/* Custom color for AI Systems */
+.ai-systems {
+    color: #B54950 !important;
 }

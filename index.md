@@ -3,7 +3,7 @@ layout: default
 order: 0
 ---
 
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/imgs/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/imgs/favicon-caa.png">
 
 <div class="home">
   {%- if page.title -%}
