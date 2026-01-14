@@ -8,6 +8,6 @@ paper-link: https://arxiv.org/abs/2601.02412
 journal: Submitted to International Conference on Learning Representations (ICLR)
 other-links:
 type: conference
-remark: (preprint coming soon!) 
+remark: 
 topic: ai-systems
 ---
