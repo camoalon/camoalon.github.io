@@ -384,15 +384,17 @@ body::before {
         display: none;
     }
 
-    /* No sidebar nav on mobile, so surface a direct link to the CV at
-       the bottom of the page instead. */
+    /* No sidebar nav on mobile, so surface a direct link to the CV
+       right above the footer instead. */
     .mobile-cv-link {
         display: block;
-        margin-top: 12px;
+        margin: 30px 0 10px 0;
+        padding-bottom: 20px;
         text-align: center;
-        color: #ffffff;
+        color: var(--frame-color);
         text-decoration: underline;
-        font-size: 0.85em;
+        font-weight: 600;
+        font-size: 0.95em;
     }
 }
 
