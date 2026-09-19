@@ -345,6 +345,10 @@ body::before {
     font-size: 29px;
 }
 
+.mobile-cv-link {
+    display: none;
+}
+
 @media only screen and (max-width: 900px) {
     .frame-sidebar {
         display: none;
@@ -358,6 +362,42 @@ body::before {
     body::before {
         right: 0;
         border-top-right-radius: 0;
+    }
+
+    /* Sticky positioning can be unreliable on some mobile browsers once
+       the URL bar collapses/expands during scroll, so pin the header
+       outright on small screens instead. */
+    .site-header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .page-content {
+        padding-top: var(--header-height);
+    }
+
+    /* No sidebar nav on mobile, so surface a direct link to the CV in
+       the fixed header instead. */
+    .mobile-cv-link {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        border: 1.5px solid rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        padding: 6px 14px;
+    }
+
+    .mobile-cv-link:active {
+        background-color: rgba(255, 255, 255, 0.15);
     }
 }
 
