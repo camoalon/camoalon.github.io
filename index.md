@@ -3,36 +3,49 @@ layout: default
 order: 0
 ---
 
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/imgs/favicon-caa.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/imgs/favicon-caa.png?v=5">
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-  <!-- <h3 style="font-size:18pt"> Welcome to my website! </h3> -->
+
+<section id="about">
   <img id="myphoto" alt="Carmen Amo Alonso" src="{{ "/assets/imgs/me.jpg" | relative_url }}"/>
-    <div id="aboutme">
+  <div id="aboutme">
   {% include_relative 0-about.md %}
   </div>
-  
-<!---
-<div id="recent-news">
-    <div id="news">
+</section>
 
-    {% for currentyear in (2019..2022) reversed %}
-    <section class="year">
-    <h3>{{ currentyear }}</h3>
-    <ul>
-    {% for news in site.categories.news %}
-    {% capture newsyear %}{{ news.date | date: "%Y"  }}{% endcapture %}
-    {% assign newsyear = newsyear | plus: 0 %}
-    {% if newsyear ==  currentyear %}
-    <li>{{news.content}}</li>
-    {% endif %}
-    {% endfor %}
-    </ul>
-    </section>
-    {% endfor %}
-    </div> 
+<div class="divider-email-wrap">
+  <hr style="border: 0; border-top: 2px solid #ccc; margin: 24px 0;">
+  <span class="divider-email divider-bio">
+    Official biography for talks <a href="https://controllableai.org/people/carmen-amo-alonso.html" class="divider-bio-here">here</a>
+  </span>
 </div>
---->
+
+<section id="research">
+  <h1 class="page-heading">Research</h1>
+  {% include content-research.html %}
+</section>
+
+<div class="divider-email-wrap">
+  <hr style="border: 0; border-top: 2px solid #ccc; margin: 24px 0;">
+  <a href="https://scholar.google.com/citations?user=2snI7NsAAAAJ&hl=en" class="divider-email">
+    <svg class="divider-email-icon" viewBox="0 0 25 25" aria-hidden="true">
+      <path fill="currentColor" d="M10.93 2.045c-.547.366-3.22 2.14-5.938 3.945C2.272 7.794.05 9.286.05 9.304c0 .019.136.11.305.2.167.096 2.85 1.583 5.965 3.31l5.656 3.143.144-.074c.082-.04 2.169-1.232 4.642-2.642l4.493-2.568.027 7.947h2.668V9.319l-3.46-2.32c-4.664-3.124-8.392-5.586-8.484-5.606-.045-.008-.527.287-1.076.652M5.355 16.633l.014 2.005 3.31 1.987 3.31 1.982 3.337-2 3.332-2.005V16.62c0-1.092-.013-1.983-.027-1.983s-1.318.782-2.9 1.741l-3.306 1.996-.431.256-1.32-.791a604.12 604.12 0 0 1-3.286-1.979l-2.005-1.21c-.024-.008-.032.883-.027 1.983"/>
+    </svg>
+    <span>Google Scholar</span>
+  </a>
+</div>
+
+<section id="teaching">
+  <h1 class="page-heading">Teaching</h1>
+  {% include content-teaching.html %}
+</section>
+
+<hr style="border: 0; border-top: 2px solid #ccc; margin: 24px 0;">
+
+<section id="publications">
+  <h1 class="page-heading">Service</h1>
+  {% include content-publications.html %}
+</section>
+
+</div>

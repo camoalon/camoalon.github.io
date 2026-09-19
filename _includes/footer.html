@@ -2,28 +2,10 @@
   <data class="u-url" href="{{ "/social/" | relative_url }}"></data>
 
   <div class="wrapper">
-    <div class="footer-col-wrapper">
-
-      <div class="footer-col footer-col-1" style="text-align: center">
-        {%- include email.html -%}
-      </div>
-
-      <div class="footer-col footer-col-2" style="text-align: center">
-          {%- include youtube.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3" style="text-align: center">
-          {%- include github.html -%}
-      </div>
-      
-      <div class="footer-col footer-col-4" style="text-align: center">
-          {%- include googlescholar.html -%}
-      </div>
-      
-    </div>
-    <p style="text-align: center; font-size: 0.75em; margin-bottom: 0.25em;">
-    Carmen Amo Alonso - {{ 'now' | date: "%Y" }}<br>
+    <p class="footer-note">
+    Carmen Amo Alonso &copy; {{ 'now' | date: "%Y" }}<br>
     The use of any content on this website for the training of generative models is not authorized without explicit prior consent.
     </p>
+  </div>
 
 </footer>

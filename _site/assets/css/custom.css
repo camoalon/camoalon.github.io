@@ -1,7 +1,369 @@
 /* General */
 
+html {
+    scroll-behavior: smooth;
+    --header-height: 90px;
+    --frame-color: #d3364b;
+    --frame-color-header: rgba(211, 54, 75, 0.9);
+}
+
+body {
+    background-color: var(--frame-color);
+}
+
+/* Collapsible sections (e.g. teaching principles) */
+.teaching-principles-details {
+    margin: 14px 0 22px 0;
+}
+
+.teaching-principles-details summary {
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    color: var(--frame-color);
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    padding: 10px 16px;
+    user-select: none;
+}
+
+.teaching-principles-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.teaching-principles-summary-plain {
+    color: #666 !important;
+    font-weight: 400 !important;
+}
+
+.teaching-principles-details summary::after {
+    content: "+";
+    float: right;
+    font-weight: 700;
+}
+
+.teaching-principles-details[open] summary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.teaching-principles-details[open] summary::after {
+    content: "\2212";
+}
+
+.teaching-principles-details .teaching-principles {
+    margin: 0;
+    padding: 14px 20px 14px 38px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.teaching-principles-details .teaching-principles li {
+    margin-bottom: 0.6em;
+}
+
+.teaching-principles-details .teaching-principles li:last-child {
+    margin-bottom: 0;
+}
+
+/* Plain (non-collapsible) use of the same list styling. The more specific
+   .teaching-principles-details .teaching-principles rules above still win
+   when this list is nested inside a collapsible box. */
+ul.teaching-principles {
+    margin: 10px 0 0 0;
+    padding-left: 22px;
+    text-align: justify;
+}
+
+ul.teaching-principles li {
+    margin-bottom: 0.5em;
+}
+
+ul.teaching-principles li:last-child {
+    margin-bottom: 0;
+}
+
+.course-meta {
+    font-size: 0.85em;
+    font-style: italic;
+}
+
+.course-role {
+    font-size: 0.85em;
+    font-style: normal;
+}
+
+/* Little "email me!" badge sitting on top of a section divider */
+.divider-email-wrap {
+    position: relative;
+}
+
+.divider-email {
+    position: absolute;
+    bottom: 100%;
+    right: -10px;
+    margin-bottom: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #fafafa;
+    padding: 2px 12px;
+    color: var(--frame-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.divider-email:hover {
+    text-decoration: underline;
+}
+
+.divider-bio {
+    font-weight: 100;
+    font-style: italic;
+    color: #888;
+    cursor: default;
+}
+
+.divider-bio:hover {
+    text-decoration: none;
+}
+
+.divider-bio-here {
+    color: var(--frame-color);
+    font-style: italic;
+    text-decoration: none;
+}
+
+.divider-bio-here:hover {
+    text-decoration: underline;
+}
+
+.divider-email-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: var(--frame-color);
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--frame-color-header);
+    border-top: none;
+    border-bottom: none;
+    margin: 0;
+    text-align: left;
+    min-height: 0;
+    max-height: none;
+    padding-top: 36px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+.site-header .site-title,
+.site-header .site-title:visited,
+.site-header .site-title:link {
+    float: none;
+    display: inline-block;
+    line-height: normal;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.site-header .site-title .small-caps {
+    font-weight: 700;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+.site-header .site-title .small-caps-tail {
+    font-size: 0.88em;
+}
+
+.site-header .site-title .small-caps-tail-light {
+    font-weight: 300;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 140px;
+    bottom: 0;
+    background-color: #fafafa;
+    border-top: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    border-top-right-radius: 16px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.frame-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 140px;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: calc(var(--header-height) + 14px);
+    background-color: var(--frame-color);
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+}
+
+.frame-sidebar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 90px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    min-height: 0;
+}
+
+.frame-sidebar-nav li.frame-sidebar-email-item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 18px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.frame-sidebar-email {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.frame-sidebar-email-text {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+}
+
+.frame-sidebar-email-icon-shape {
+    stroke: var(--frame-color);
+}
+
+.frame-sidebar-email:hover {
+    text-decoration: underline;
+}
+
+.frame-sidebar-email-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.frame-sidebar-nav li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.2s ease;
+}
+
+.frame-sidebar-nav li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.frame-sidebar-nav li:first-child::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.frame-sidebar-nav li:not(.frame-sidebar-email-item):hover,
+.frame-sidebar-nav li.active-nav-item {
+    background-color: #fafafa;
+}
+
+.frame-sidebar-nav li:not(.frame-sidebar-email-item) > a {
+    display: block;
+    padding: 22px 16px;
+}
+
+.frame-sidebar .frame-sidebar-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: inherit;
+    font-weight: normal;
+    transition: color 0.2s ease;
+}
+
+.frame-sidebar-nav li:not(.frame-sidebar-email-item):hover a,
+.frame-sidebar-nav li.active-nav-item a {
+    color: var(--frame-color);
+}
+
+.site-header,
+.page-content,
+.site-footer {
+    margin-right: 140px;
+}
+
+#about, #research, #teaching, #publications {
+    display: block;
+}
+
+#about {
+    scroll-margin-top: var(--header-height);
+}
+
+#research, #teaching, #publications {
+    scroll-margin-top: calc(var(--header-height) + 26px);
+}
+
+.page-heading {
+    font-size: 29px;
+}
+
+@media only screen and (max-width: 900px) {
+    .frame-sidebar {
+        display: none;
+    }
+
+    .page-content,
+    .site-footer {
+        margin-right: 0;
+    }
+}
+
+#about::after, #research::after, #teaching::after, #publications::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 a, a:link, a:visited{
-  color: #2c5aa0;
+  color: var(--frame-color);
 }
 
 a.site-title, a.site-title:visited, a.site-title:link{
@@ -14,7 +376,7 @@ a.site-title, a.site-title:visited, a.site-title:link{
 
 /* index */
 #myphoto{
-    border: 2px solid #dbdbdb; /* #0071BC; */
+    border: 2px solid #dbdbdb;
     border-radius: 30px;
     float: left;
     padding: 0px;
@@ -33,7 +395,7 @@ a.site-title, a.site-title:visited, a.site-title:link{
 
 /* About me */
 #aboutme {
-    padding-top: 6px;
+    padding-top: 26px;
     text-align: justify;
 }
 
@@ -45,7 +407,7 @@ a.site-title, a.site-title:visited, a.site-title:link{
 
 /* Footnotes */
 .footnote-ref {
-    color: #2c5aa0;
+    color: var(--frame-color);
     text-decoration: none;
     font-size: 0.6em;
     vertical-align: super;
@@ -53,7 +415,7 @@ a.site-title, a.site-title:visited, a.site-title:link{
 }
 
 .footnote-ref-extended {
-    color: #2c5aa0;
+    color: var(--frame-color);
     text-decoration: none;
     font-size: inherit;
     vertical-align: baseline;
@@ -67,12 +429,26 @@ a.site-title, a.site-title:visited, a.site-title:link{
     text-decoration: underline;
 }
 
+.signpost-ref {
+    color: var(--frame-color);
+    font-size: 0.95em;
+    vertical-align: super;
+    margin-left: 2px;
+    position: relative;
+    cursor: help;
+}
+
+.signpost-ref:hover .footnote-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* Tooltip styles */
 .footnote-tooltip {
     position: absolute;
     bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    transform: none;
     background-color: #f8f9fa;
     color: #333;
     padding: 8px 12px;
@@ -107,6 +483,11 @@ a.site-title, a.site-title:visited, a.site-title:link{
 }
 
 .footnote-tooltip.fn4 {
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.footnote-tooltip.ct {
     min-width: 260px;
     max-width: 260px;
 }
@@ -128,8 +509,8 @@ a.site-title, a.site-title:visited, a.site-title:link{
 }
 
 .footnote-tooltip.fn8 {
-    min-width: 500px;
-    max-width: 500px;
+    min-width: 620px;
+    max-width: 620px;
 }
 
 .footnote-tooltip::after {
@@ -171,7 +552,7 @@ a.site-title, a.site-title:visited, a.site-title:link{
 }
 
 .footnote-backref {
-    color: #2c5aa0;
+    color: var(--frame-color);
     text-decoration: none;
     margin-left: 5px;
 }
@@ -223,7 +604,7 @@ a.site-title, a.site-title:visited, a.site-title:link{
 .news-separator {
     width: 3px;
     height: 20px;
-    background-color: #2c5aa0;
+    background-color: var(--frame-color);
     margin-right: 20px;
 }
 
@@ -244,13 +625,14 @@ a.site-title, a.site-title:visited, a.site-title:link{
         align-items: flex-start;
         padding-left: 15px;
     }
-    
+
     .news-date {
         margin-right: 0;
         margin-bottom: 8px;
         font-size: 12px;
     }
-    
+}
+
 /* Research page figure styling */
 .research-figure-container {
     margin-bottom: 20px;
@@ -329,7 +711,7 @@ a.site-title, a.site-title:visited, a.site-title:link{
 
 
 /* Highlight a publicaiton when the id is linked to using an anchor? */
-:target {
+.publication:target {
    background-color: #ffa;
 }
 
@@ -372,15 +754,82 @@ margin: 20px;
     border-radius: 0px;
 }
 
+.cv-pdf-embed {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 85vh;
+    box-sizing: border-box;
+    border: none;
+    border-top: 8px solid var(--frame-color);
+    border-bottom: 8px solid var(--frame-color);
+    border-radius: 8px;
+}
+
+.cv-page .page-content {
+    animation: cv-slide-in 0.9s cubic-bezier(0.16, 0.6, 0.2, 1) both;
+    will-change: transform, opacity;
+}
+
+@keyframes cv-slide-in {
+    from {
+        transform: translateX(60px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.cv-exit-transition .page-content {
+    animation: cv-slide-in-left 0.9s cubic-bezier(0.16, 0.6, 0.2, 1) both;
+    will-change: transform, opacity;
+}
+
+@keyframes cv-slide-in-left {
+    from {
+        transform: translateX(-60px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 /* Footer */
 
-footer {
+.page-content {
+    position: relative;
+}
+
+.page-content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: radial-gradient(circle at top left, transparent 16px, var(--frame-color) 16px);
+    pointer-events: none;
+}
+
+.site-footer {
     font-size: .85rem;
     font-style: normal;
-    background-color: #f2f2f2;
-    color: #7a7a7a;
+    background-color: var(--frame-color);
+    color: #ffffff;
     border-color: transparent;
-    height: 50px;
+    padding: 18px 0;
+    margin-right: 140px;
+}
+
+.site-footer .footer-note {
+    text-align: center;
+    font-size: 0.75em;
+    margin: 0;
+    color: #ffffff !important;
 }
 
 /* Custom color for Mixer Block */
